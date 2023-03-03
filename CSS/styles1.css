@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/* Home Page */
+*{
+    margin: 0px;
+}
+
+body {
+    background-color: #eefcfd;
+}
+.Nav_Bar{
+    margin-left: 5vw;
+}
+
+nav li {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    list-style-type: none;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: calc(0.7vw + 0.7vh);
+    margin: 1vh 4vw 3vh 1vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 6vw;
+    height: 3vh;
+    text-align: center;
+    transition: 0.8s;
+}
+
+nav ul li:hover {
+    background-color: #FFD230;
+    color: #000;
+    animation-name: navBar;
+    animation-duration: 0.2s;
+}
+
+@keyframes navBar {
+
+    0% {
+        height: 0vh;
+    }
+
+    25% {
+        height: 0.75;
+    }
+
+    50% {
+        height: 1.5vh;
+    }
+
+    75% {
+        height: 2.35;
+    }
+
+    100% {
+        height: 3vh;
+    }
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.left_container {
+    width: 35vw;
+    height: 75vh;
+    background-color: #FFD230;
+    margin-top: 3%;
+}
+
+.Portfolio {
+    font-family: 'Satisfy', cursive;
+    font-weight: bolder;
+    font-size: calc(3vw + 1vh);
+    margin-top: -7%;
+    margin-left: 8%;
+}
+
+.About {
+    margin-top: 15vh;
+}
+
+.name,
+.info {
+    position: relative;
+    left: 13.8%;
+}
+
+.name img {
+    width: calc(37vw + 18vh);
+    height: inherit;
+}
+
+.info {
+    width: calc(29vw + 18vh);
+    font-size: calc(1vw + 1vh);
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5%;
+    margin-top:-5%;
+    line-height: 1.6;
+}
+.social_section {
+    width: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 13vh;
+}
+
+.social_section a {
+    text-decoration: none;
+    color: black;
+    margin: 4vh 5vw 1vh 0vw;
+    font-size: calc(1.5vw + 1vh);
+}
+
+.social_section a:hover{
+    font-size: calc(1.8vw + 1vh);
+    opacity: 0.75;
+}
+
+
+
+/* Skills Page */
+
+
+.left_box{
+    background-color: #FFD230;
+    width: 30vw;
+    height: 20vh;
+    margin-top: 10vh;
+
+}
+
+.left_text{
+    margin-left: 4.5vw;
+}
+.left_text img{
+    width: calc(35vw + 15vh);
+}
+
