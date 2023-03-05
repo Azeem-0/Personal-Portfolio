@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.left_container {
+    width: 35vw;
+    height: 75vh;
+    background-color: #FFD230;
+    margin-top: 3%;
+}
+.info p{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.Portfolio {
+    font-family: 'Satisfy', cursive;
+    font-weight: bolder;
+    font-size: calc(3vw + 1vh);
+    margin-top: -7%;
+    margin-left: 8%;
+}
+
+.About {
+    margin-top: 15vh;
+}
+
+.name,
+.info {
+    position: relative;
+    left: 13.8%;
+}
+
+.name img {
+    width: calc(37vw + 18vh);
+    height: inherit;
+}
+
+.info {
+    width: calc(29vw + 18vh);
+    font-size: calc(1vw + 1vh);
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5%;
+    margin-top:-5%;
+    line-height: 1.9;
+}
+.social_section {
+    width: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 13vh;
+}
+
+.social_section a {
+    text-decoration: none;
+    color: black;
+    margin: 4vh 5vw 1vh 0vw;
+    font-size: calc(1.5vw + 1vh);
+}
+
+.social_section a:hover{
+    font-size: calc(1.8vw + 1vh);
+    opacity: 0.75;
+}
+
+
+
+
+
