@@ -1,9 +1,11 @@
+.Nav_Bar{
+    margin-left: 9%;
+}
 .container {
     display: flex;
     justify-content: space-between;
     margin-top: 3%;
 }
-
 .left_container {
     width: 35vw;
     height: 75vh;
@@ -41,7 +43,7 @@
     font-size: calc(1vw + 1vh);
     font-family: 'Roboto', sans-serif;
     margin-left: 5%;
-    margin-top:-5%;
+    margin-top: -13%;
     line-height: 1.9;
 }
 .social_section {
@@ -64,8 +66,14 @@
     font-size: calc(1.8vw + 1vh);
     opacity: 0.75;
 }
-
-
-
-
-
+.whitebox{
+    margin-left: 18%;
+    margin-top: 5%;
+    width: 13vw;
+    height: 2.5vw;
+    background-color: white;
+    border-radius: 15px;
+}
+footer{
+    margin-top: 3%;
+}
