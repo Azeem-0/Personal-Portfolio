@@ -65,9 +65,9 @@
 .social_section a {
     text-decoration: none;
     color: black;
-    margin: 4vh 5vw 1vh 0vw;
+    margin: 150% 500% 150% 0vw;
     font-size: calc(1.5vw + 1vh);
-    background-color: #eefcfd;
+    background-color: #eefcfd
 }
 
 .social_section a:hover{
