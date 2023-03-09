@@ -45,16 +45,15 @@
 .Skill_img img{
     width: calc(30vw + 10vh);
 }
-.Skills_section
-{
-    margin-top: 10%;
-    width: 26vw;
-    margin-left: 100%;
+.Skills_section {
+    margin-top: 15%;
+    width: 101%;
+    margin-left: 90%;
 }
 
 .Skills_section img{
-    width: 8%;
-    margin: 4% 10% 4% 15%;
+    width: calc(3.5vw + 1vh);
+    margin: 7% 10% 7% 15%;
 
 }
 
@@ -69,6 +68,9 @@
     font-size: calc(0.8vw + 0.6vh);
     font-family: 'Barlow Condensed', sans-serif;
     line-height: 1.5;
+}
+.parent{
+    height: 50vh;
 }
 .score{
     width: 14vw;
@@ -89,10 +91,11 @@
 .stars{
     display: flex;
     flex-direction: row;
-    margin-left: 36%;
-    font-size: 1.3vw;
-    margin-top: -3%;
-    width: 68%;
+    margin-left: 48%;
+    font-size: 61%;
+    font-size: 1.4vw;
+    margin-top: 15%;
+    width: 46%;
     justify-content: space-between;
 }
 .c{
@@ -134,6 +137,11 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.parent {
+    height: 50vh;
+    overflow: auto;
+    width: 130%;
+}
 .Concepts{
     width: 24%;
     font-size: calc(1vw + 0.5vh);
@@ -152,7 +160,7 @@
     position: absolute;
     border-left: 0.3vw solid #FFD230;
     height: 50%;
-    top: 25%;
+    top: 34%;
 }
 .p{
     margin-left: 25%;
