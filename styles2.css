@@ -1,79 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&display=swap');
-*{
-    margin: 0px;
-}
-
-body {
-    background-color: #eefcfd;
-}
 .Nav_Bar{
-    margin-left: 5vw;
-    margin-top: 5vh;
-}
-
-nav li {
-    display: block;
-    text-decoration: none;
-    color: #000;
-    list-style-type: none;
-    float: left;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    font-size: calc(0.7vw + 0.7vh);
-    margin: 1vh 4vw 3vh 1vw;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-    display: block;
-    width: 6vw;
-    height: 3vh;
-    text-align: center;
-    transition: 0.8s;
-}
-
-nav ul li:hover {
-    background-color: #FFD230;
-    color: #000;
-    animation-name: navBar;
-    animation-duration: 0.2s;
-}
-
-@keyframes navBar {
-
-    0% {
-        height: 0vh;
-    }
-
-    25% {
-        height: 0.75;
-    }
-
-    50% {
-        height: 1.5vh;
-    }
-
-    75% {
-        height: 2.35;
-    }
-
-    100% {
-        height: 3vh;
-    }
+    margin-top: 6vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
 }
 .container {
     display: flex;
+    flex-direction: row;
+    height: 97vh;
+    width: 98vw;
     justify-content: space-between;
-    height: 100vh;
 }
 
 .left_container{
     width: 21vw;
     height: 55vh;
     background-color: #FFD230;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 }
 .left_container img{
     margin-top: 20vh;
@@ -84,15 +27,17 @@ nav ul li:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 50vw;
 }
 .hobbies_container{
-    margin-left: 60.5%;
-    width: 39.5%;
+    margin-left: 54%;
+    width: 50%;
     height: 40%;
     background-color: #FFD230;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.5)
 }
 .About{
-    margin-bottom: 10.5vh;
+    margin-bottom: 1.5vh;
 }
 .hobbies_container img{
     width: calc(19vw + 7vh);
@@ -100,9 +45,9 @@ nav ul li:hover {
     margin-left: -12.5vw;
 }
 .alma-matter{
-    margin-left:22vw;
+    margin-left: 22vw;
     width: 165%;
-    margin-top: 15%;
+    margin-top: -15%;
 }
 
 .alma-matter ul li{
@@ -113,13 +58,13 @@ nav ul li:hover {
     font-weight: bolder;
 }
 .hobbies_section{
-    margin-left: -71%;
-    margin-top: 40%;
+    margin-left: -60%;
+    margin-top: 20%;
 }
 
 .hobbies_section ul li{
     list-style:disc;
-    line-height: 3.5;
+    line-height: 3;
     font-size: calc(0.6vw + 0.8vh);
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
@@ -128,4 +73,27 @@ nav ul li:hover {
     font-size: calc(0.8vw + 0.6vh);
     font-family: 'Barlow Condensed', sans-serif;
     line-height: 1.5;
+}
+.whitebox{
+    width: 31%;
+    margin-left: 28%;
+    margin-top: 5%;
+    height: 2vw;
+    background-color: white;
+    border-radius: 4px;
+}
+.w2{
+    width: 25%;
+    margin-left: 13%;
+    margin-top: 3%;
+    height: 1.5vw;
+    background-color: white;
+    border-radius: 4px;
+}
+.line{
+    right: 40.5%;
+    position: absolute;
+    border-left: 0.3vw solid #FFD230;
+    height: 45%;
+    bottom: 6%;
 }
