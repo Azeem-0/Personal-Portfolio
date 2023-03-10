@@ -1,0 +1,1 @@
+document.getElementById("Projects").classList.add("myStyle");

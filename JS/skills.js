@@ -1,0 +1,1 @@
+document.getElementById("Skills").classList.add("myStyle");
