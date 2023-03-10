@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Roboto&family=Satisfy&display=swap');
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eefcfd;
+}
+.Nav_Bar{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+}
+.navi{
+    width: 10%;
+    height: 5%;
+    margin-left: 14.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myStyle{
+    transform: translateY(-10%) !important;
+    text-decoration: underline #FFD230 35% !important;
+    opacity: 100% !important; 
+}
+.navi a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: calc(1vw + 0.5vh);
+    opacity: 80%;
+}
+
+.navi a:hover {
+    transform: translateY(-10%);
+    text-decoration: underline #FFD230 35%;
+    opacity: 100%;
+}
+.footer{
+    position: absolute;
+    bottom: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: calc(0.65vw + 0.5vh);
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+}
+.copyrigth{
+    bottom: 1.5%;
+}
