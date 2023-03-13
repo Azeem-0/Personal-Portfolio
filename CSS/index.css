@@ -1,7 +1,7 @@
 .Nav_Bar{
     margin-left: 13%;
 }
-.top{
+.total_container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,7 +42,7 @@
 
 .name img {
     width: calc(37vw + 18vh);
-    height: inherit;
+    height: ainherit;
 }
 
 .info {
@@ -92,4 +92,12 @@
     transform: translateY(-4px);
     box-shadow: 0px 10px 10px 2px rgba(0, 0, 0, 0.25);
   }
-  
+
+  @media (max-width:500px) {
+        .social_section{
+            right:5%;
+        }
+        .copyright {
+            margin-bottom: 4%;
+        }
+    }
