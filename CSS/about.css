@@ -37,7 +37,7 @@
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.5)
 }
 .About{
-    margin-bottom: 15%;
+    margin-bottom: 12%;
 }
 .hobbies_container img{
     width: calc(19vw + 7vh);
@@ -96,4 +96,11 @@
     border-left: 0.3vw solid #FFD230;
     height: 45%;
     bottom: 8%;
+}
+
+@media (max-width:500px) {
+    .About{
+        margin-bottom: 40%;
+    }
+    
 }
