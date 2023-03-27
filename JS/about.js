@@ -1,1 +1,0 @@
-document.getElementById("About").classList.add("myStyle");
