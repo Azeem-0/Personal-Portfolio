@@ -1,5 +1,13 @@
 
 
+body {
+    background-color: lightgrey;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
 /* HOME */
 
 
@@ -70,7 +78,7 @@
 
 /* CONTACT */
 
-.contactMe{
+.contactMe,.submitButton{
     border-radius: 5px;
     cursor: pointer;
     width: 15vw;
@@ -85,7 +93,13 @@
     font-family: 'Noto Sans JP', sans-serif;
     margin: 30px;
 }
-
+.contactMe:hover{
+    transition: 0.5s ease-out;
+    transform: translatey(-10px);
+    box-shadow: 0px 1px 5px 0px white;
+    background-color: #272727;
+    color: #facf0f;
+}
 
 
 /* MEDIA QUEIRIES FOR MIDDLE-CONTAINER */
