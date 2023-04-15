@@ -1,49 +1,64 @@
+$(document).ready(function () {
+
+    $(".onloadShow").removeClass("visibilityNone");  //showing the three dots.
+
+
+    $(".one").addClass("animate"); //adding the animate class to the three dots sequentially.
+    setTimeout(function () {
+        $(".two").addClass("animate");
+        setTimeout(function () {
+            $(".three").addClass("animate");
+        }, 100);
+    }, 100);
+    setTimeout(function () {
+        $(".onloadShow").addClass("visibilityNone"); //removing the three dots.
+        $(".totalContainer").removeClass("visibilityNone"); //showing the document after loading the three dots animation.
+        $(".totalContainer").addClass("opacityOnLoad");
+        $(".footer").addClass("footerUp");
+    }, 500);
+
+    $(".hey").addClass("down");
+    $(".azeem").addClass("down");
+    $(".contactMe").addClass("contactslide");
+});
 
 
 
-// MINIMUM NAVIGATION BAR TOGGLING CLASSES 
-
-$(".hb").click(function () {
-    $(".skillContainer").toggleClass("visibilityNone");
+function togglingClasses() {
     $(".Name").toggleClass("visibilityNone");
     $(".socialSection").toggleClass("visibilityNone");
-    $("#About").toggleClass("visibilityNone");
     $(".totalContainer").toggleClass("background");
     $(".hamBurger").toggleClass("visibilityNone");
     $(".hamBurgerClose").toggleClass("visibilityNone");
-    $("#NavBar ul").toggleClass("slide-out");
-    $(".hamBurgerClose").toggleClass("slide-out");
+
+}
+$(".hamBurger").click(function () {
+    togglingClasses();
+    $("#NavBar ul").addClass("slide-out");
+    $(".hamBurgerClose").addClass("slide-out");
+    $("#NavBar ul").removeClass("slide-in");
+    $(".hamBurgerClose").removeClass("slide-in");
+});
+$(".hamBurgerClose").click(function () {
+    $("#NavBar ul").removeClass("slide-out");
+    $(".hamBurgerClose").removeClass("slide-out");
+    $("#NavBar ul").addClass("slide-in");
+    $(".hamBurgerClose").addClass("slide-in");
+    setTimeout(() => {
+        togglingClasses();
+    }, 400);
 });
 
-// HOME PAGE JQUERY
 
-// FIXING THE TEXT LENGTH FOR MOBILE DEVICES
+if (window.location.pathname.includes("/index.html") || (!window.location.pathname.includes("/projects.html") && !window.location.pathname.includes("/about.html") && !window.location.pathname.includes("/skills.html"))) {
 
-const about = window.matchMedia("(max-width: 700px)");
-if (about.matches) {
-    $(".azeem").html("I'M AZEEM");
-    $(".am p").html("Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nisi pariatur quos! Tempore, reiciendis placeat repudiandae quo quisquam deleniti magnam esse. Ad alias explicabo vitae ");
+    // HOME PAGE JQUERY
+
+
+    // FIXING THE TEXT LENGTH FOR MOBILE DEVICES
+    const about = window.matchMedia("(max-width: 700px)");
+    if (about.matches) {
+        $(".azeem").html("I'M AZEEM");
+        // $(".am p").html("Welcome to my digital home! As a computer science student, I am excited to share my passion for creating innovative digital solutions with you");
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const skills = window.matchMedia("(max-width:500px)");
-// if(skills.matches){
-//     $(".skillSet p").html("LoremLorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus repellendus harum labore voluptate numquam obcaecati eveniet amet perferendis, incidunt necessitatibus facilis quia! Estaccusamus ea aliquam earum perspiciatis cumque! Lorem ipsum dolor")
-// }
-
-
-
-
-
-
