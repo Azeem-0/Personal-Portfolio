@@ -203,28 +203,3 @@
     }
     
 }
-
-
-.down{
-    transition: 0.3s ease-in;
-    animation: down 1.5s;
-    animation-fill-mode: forwards;
-}
-@keyframes down {
-    0%{
-        font-size: 3em;
-    }
-    50%{
-        font-size: 3.5;
-        transform: translateY(1vh);
-    }
-    75%{
-        font-size: 4.3em;
-        transform: translateY(-1vh);
-    }
-    100%{
-        font-size: 4em;
-        transform: translateY(0vh);
-    }
-    
-}
