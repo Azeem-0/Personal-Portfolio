@@ -25,7 +25,6 @@
 .hey,.azeem{
     display: flex;
     z-index: 2;
-    transform: translateY(-10vh);
     font-size: 4em;
 }
 .azeem{
@@ -74,9 +73,6 @@
 
 
 /* CONTACT */
-.contactMe{
-    transform: translateY(30vh);
-}
 .contactMe{
     border-radius: 5px;
     cursor: pointer;
