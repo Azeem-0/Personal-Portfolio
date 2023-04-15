@@ -5,30 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Y Sathvik</title>
+    <title>Azeem's</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" type="image/x-icon" sizes="200x200" href="Images/Logo.png">
+    <link rel="icon" type="image/x-icon" sizes="200x200" href="Logo.png">
     <link rel="stylesheet" href="https://kit.fontawesome.com/7f2a891619.css" crossorigin="anonymous">
 </head>
 
-<body>
+<body id="HomePage">
     <span class="onloadShow visibilityNone">
         <div class="one round"></div>
         <div class="two round"></div>
         <div class="three round"></div>
     </span>
-   <div class="totalContainer visibilityNone">
+    <div class="totalContainer visibilityNone">
         <section id="NavBar">
             <span class="side">
                 <div class="logo">
                     <a href="index.html"><img src="Images/Logo.png" alt="A"></a>
                 </div>
-                <a href="index.html"><p>ZEEM</p></a>
+                <a href="index.html">
+                    <p data-text="ZEEM">ZEEM</p>
+                </a>
             </span>
             <div class="minNavigation">
                 <ul>
-                    <li class="nav"><a href="index.html">HOME</a></li>
+                    <li class="nav HomePage"><a href="index.html">HOME</a></li>
                     <li class="nav"><a href="projects.html">PROJECTS</a></li>
                     <li class="nav"><a href="skills.html">SKILLS</a></li>
                     <li class="nav"><a href="resources.html">RESOURCES</a></li>
@@ -41,6 +43,11 @@
             <div class="hamBurgerClose hb visibilityNone">
                 <i class="fa-solid fa-xmark"></i>
             </div>
+            <div class="borderBottom">
+                <div class="fillBottom">
+
+                </div>
+            </div>
         </section>
         <section id="Home">
             <div class="Name">
@@ -49,6 +56,7 @@
                     <div class="doin">E</div>
                     <div class="doin">Y</div>
                     <div class="doin">,</div>
+
                 </div>
                 <div class="azeem">
                     <div class="doin">I</div>
@@ -68,13 +76,14 @@
                     <div class="doin">K</div>
                 </div>
                 <div class="am">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptas ex rerum iure facere quo,
-                        nam magnam, incidunt soluta excepturi doloribus similique asperiores unde quis repellendus et,
-                        officiis vel quia?</p>
+                    <p data-text="introduction">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptas ex rerum iure facere quo, nam magnam, incidunt soluta excepturi doloribus similique asperiores unde quis repellendus et, officiis vel quia?
+                    </p>
                 </div>
-                <buttton class="contactMe" onclick="showForm()">
-                    CONTACT ME!
-                </buttton>
+                <div class="slidingButton">
+                    <buttton class="contactMe" onclick="showForm()">
+                        CONTACT ME!
+                    </buttton>
+                </div>
             </div>
             <div class="socialSection">
                 <a class="fa-brands fa-square-instagram" href="https://www.instagram.com/azeem.shaik.16906/"
@@ -84,10 +93,10 @@
                 <a class="fa-brands fa-github" href="https://github.com/Azeem-0" target="_blank"></a>
                 <a class="fa-solid fa-envelope" href="mailto:azeemshaik025@gmail.com" target="_blank"></a>
             </div>
-            <div class="footer">
-                <p>© 2023.Designed & Build by Azeem Shaik</p>
-            </div>
         </section>
+        <div class="footer">
+            <p>© 2023.Designed & Build by Azeem Shaik</p>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/7f2a891619.js" crossorigin="anonymous"></script>
