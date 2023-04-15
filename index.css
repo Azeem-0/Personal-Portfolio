@@ -1,25 +1,15 @@
 
 
-body {
-    background-color: lightgrey;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
 /* HOME */
-
 
 #Home{
     width: 100vw;
     height: 97vh;
-    background-color: #e0e0e0;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* no-repeat center center/cover;  */
 }
 .Name{
     width: 85%;
@@ -29,22 +19,29 @@ body {
     align-items: center;
     letter-spacing: 3px;
     line-height: 1.5;
+    margin-top: 6%;
 }
+
 .hey,.azeem{
     display: flex;
+    z-index: 2;
+    transform: translateY(-10vh);
+    font-size: 4em;
+}
+.azeem{
+    transform: translateY(-14vh);
 }
 .doin{
     margin:1px;
     display: flex;
-    font-size: 4em;
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 500px;
 }
 .am{
     margin-top: 2%;
     text-align: center;
     font-size: 1rem;
-    font-family:'Courier New', Courier, monospace;
+    line-height: 1.8;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 
@@ -52,11 +49,11 @@ body {
 /* SOCIAL SECTION */
 
 .socialSection{
+    background-color: whitesmoke;
     width: fit-content;
     display: flex;
     flex-direction: column;
     font-size: calc(1.5vw + 1vh);
-    margin-right: 96vw;
     position: absolute;
     left: 0%;
     bottom: 6%;
@@ -69,7 +66,7 @@ body {
 }
 .socialSection a:hover{
     transition: 0.3s ease-in;
-    color: #facf0f;
+    color: #f6d334;
     transform: translatey(-5%);
 }
 
@@ -77,13 +74,15 @@ body {
 
 
 /* CONTACT */
-
-.contactMe,.submitButton{
+.contactMe{
+    transform: translateY(30vh);
+}
+.contactMe{
     border-radius: 5px;
     cursor: pointer;
-    width: 15vw;
+    width: 14em;
     height: 8vh;
-    background-color: #facf0f;
+    background-color: #f6d334;
     margin-top: 5%;
     display: flex;
     justify-content: center;
@@ -92,38 +91,52 @@ body {
     border: 0;
     font-family: 'Noto Sans JP', sans-serif;
     margin: 30px;
+    font-size: 0.8em;
 }
 .contactMe:hover{
-    transition: 0.5s ease-out;
+    transition: 0.5s ease-out!important;
     transform: translatey(-10px);
     box-shadow: 0px 1px 5px 0px white;
     background-color: #272727;
-    color: #facf0f;
+    color: #f6d334;
 }
+
+
+/* MEDIA QUEIRIES FOR HOME PAGE */
 
 
 /* MEDIA QUEIRIES FOR MIDDLE-CONTAINER */
 
 @media (max-width:500px) {
-    .azeem,.doin{
-        font-size: 3em!important;
+    .hey,.azeem{
+        font-size: 3.5em!important;
     }
     .am{
         font-size: 0.8em;
     }
 }
 
-@media (max-width:350px) {
-    .azeem,.doin{
-        font-size: 2.5em!important;
+@media (max-width:400px) {
+    .hey,.azeem{
+        font-size: 3em!important;
     }
+    .side img{
+        width: 30px!important;
+    }
+    
+}
+@media (max-width:350px) {
+    .hey,.azeem{
+        font-size: 2.2em!important;
+    }
+
     
 }
 @media (max-width:700px) {
     .azeem{
         display: flex;
         font-size: 4em;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Noto Sans JP', sans-serif;
         font-weight: bolder;
     }
 }
@@ -139,37 +152,79 @@ body {
     }
     
 }
-@media (max-width:450px) {
+
+@media (max-width:540px) {
     .contactMe{
-        width: 25vw;
+        width: 15em;
         height: 5vh;
         font-size: calc(0.5vw + 0.8vh);
     }
-    .submitButton{
-        font-size: 0.5rem;
-    }
 
-    
+}
+
+@media (max-width:350px) {
+    .contactMe{
+        font-size: calc(0.2vw + 0.8vh);
+    }
 }
 
 /* MEDIA-QUERIES FOR SOCIAL MEDIA SECTION */
 
 @media (max-width:950px) {
     .socialSection {
+        width: 100vw;
+        background-color: transparent;
         flex-direction: row;
-        left: 41%;
-        box-shadow: 0px 0px 0px 0px #e0e0e0;
-    }
-    .socialSection img {
-        width: 15%;
-        margin: 1vh 2vw;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 0px 0px 0px white;
     }
 }
 
-@media (max-width:600px) {
-    .socialSection{
-        left: 38%;
+
+
+/* JAVA SCRIPT USING CLASSES */
+
+.contactslide{
+    animation: cslideup 1s;
+    transition: 0.2s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cslideup {
+    0%{
+        box-shadow: 0px 2px 10px 2px rgb(55, 55, 55);
+    }
+    75%{
+        box-shadow: 0px 2px 10px 2px rgb(55, 55, 55);
+    }
+    100%{
+        transform: translateY(0);
     }
     
 }
 
+
+.down{
+    transition: 0.3s ease-in;
+    animation: down 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes down {
+    0%{
+        font-size: 3em;
+    }
+    50%{
+        font-size: 3.5;
+        transform: translateY(1vh);
+    }
+    75%{
+        font-size: 4.3em;
+        transform: translateY(-1vh);
+    }
+    100%{
+        font-size: 4em;
+        transform: translateY(0vh);
+    }
+    
+}
