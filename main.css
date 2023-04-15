@@ -242,8 +242,36 @@ body {
 
 
 /* JAVA SCRIPT USING CLASSES */
+.animate {
+    transition: 1s ease;
+    animation: onload 0.5s;
+}
 
 
+
+@keyframes onload {
+    0% {
+        transform: translateY(0px);
+        background-color: black;
+    }
+
+    50% {
+        transform: translateY(15px);
+        background-color: black;
+    }
+
+    100% {
+        transform: translateY(-15px);
+        background-color: black;
+    }
+
+}
+
+
+.slide-in {
+    transition: 0.5s ease-in;
+    transform: translateX(210%) !important;
+}
 .visibilityNone {
     transition: 0.5s ease-in;
     display: none !important;
