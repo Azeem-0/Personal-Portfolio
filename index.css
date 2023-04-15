@@ -1,5 +1,4 @@
 
-
 /* HOME */
 
 #Home{
@@ -11,6 +10,7 @@
     align-items: center;
     flex-direction: column;
 }
+
 .Name{
     width: 85%;
     display: flex;
@@ -25,6 +25,7 @@
 .hey,.azeem{
     display: flex;
     z-index: 2;
+    transform: translateY(-10vh);
     font-size: 4em;
 }
 .azeem{
@@ -42,7 +43,6 @@
     line-height: 1.8;
     font-family: 'Montserrat Alternates', sans-serif;
 }
-
 
 
 /* SOCIAL SECTION */
@@ -79,7 +79,6 @@
     width: 14em;
     height: 8vh;
     background-color: #f6d334;
-    margin-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +87,7 @@
     font-family: 'Noto Sans JP', sans-serif;
     margin: 30px;
     font-size: 0.8em;
+    box-shadow: 0px 1px 5px 1px rgb(55, 55, 55);
 }
 .contactMe:hover{
     transition: 0.5s ease-out!important;
@@ -98,32 +98,30 @@
 }
 
 
-/* MEDIA QUEIRIES FOR HOME PAGE */
+
+/* MEDIA QUEIRIES FOR WHOLE PAGE */
 
 
 /* MEDIA QUEIRIES FOR MIDDLE-CONTAINER */
 
 @media (max-width:500px) {
-    .hey,.azeem{
-        font-size: 3.5em!important;
-    }
-    .am{
-        font-size: 0.8em;
-    }
 }
 
-@media (max-width:400px) {
+@media (max-width:450px) {
     .hey,.azeem{
-        font-size: 3em!important;
+        font-size: 3.5em!important;
     }
     .side img{
         width: 30px!important;
     }
     
 }
-@media (max-width:350px) {
+@media (max-width:390px) {
     .hey,.azeem{
-        font-size: 2.2em!important;
+        font-size: 2.6em!important;
+    }
+    .am p{
+        font-size: 0.7em;
     }
 
     
@@ -155,7 +153,6 @@
         height: 5vh;
         font-size: calc(0.5vw + 0.8vh);
     }
-
 }
 
 @media (max-width:350px) {
@@ -175,27 +172,18 @@
         justify-content: center;
         box-shadow: 0px 0px 0px 0px white;
     }
-}
-
-
-
-/* JAVA SCRIPT USING CLASSES */
-
-.contactslide{
-    animation: cslideup 1s;
-    transition: 0.2s ease;
-    animation-fill-mode: forwards;
-}
-
-@keyframes cslideup {
-    0%{
-        box-shadow: 0px 2px 10px 2px rgb(55, 55, 55);
+    .socialSection a{
+        font-size: 1.2em;
     }
-    75%{
-        box-shadow: 0px 2px 10px 2px rgb(55, 55, 55);
+    .Name{
+        align-items: normal;
+        margin-top: 0%;
     }
-    100%{
-        transform: translateY(0);
+    .am{
+        text-align: justify;
     }
-    
+    .contactMe{
+        margin: 0px;
+        margin-top: 5%;
+    }
 }
