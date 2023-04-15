@@ -270,21 +270,6 @@ body {
 }
 
 
-.footerUp {
-    animation: footerUp 1s ease;
-}
-
-@keyframes footerUp {
-    0% {
-        transform: translateY(92%);
-    }
-
-    100% {
-        transform: translateY(0%);
-    }
-
-}
-
 /* FOOTER */
 
 .footer {
