@@ -13,13 +13,7 @@ $(document).ready(function () {
     setTimeout(function () {
         $(".onloadShow").addClass("visibilityNone"); //removing the three dots.
         $(".totalContainer").removeClass("visibilityNone"); //showing the document after loading the three dots animation.
-        $(".totalContainer").addClass("opacityOnLoad");
-        $(".footer").addClass("footerUp");
     }, 500);
-
-    $(".hey").addClass("down");
-    $(".azeem").addClass("down");
-    $(".contactMe").addClass("contactslide");
 });
 
 
