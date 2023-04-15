@@ -25,11 +25,7 @@
 .hey,.azeem{
     display: flex;
     z-index: 2;
-    transform: translateY(-10vh);
     font-size: 4em;
-}
-.azeem{
-    transform: translateY(-14vh);
 }
 .doin{
     margin:1px;
