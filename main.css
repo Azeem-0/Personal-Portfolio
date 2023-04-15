@@ -267,7 +267,10 @@ body {
 
 }
 
-
+.slide-out {
+    transition: 0.5s ease-in;
+    transform: translateX(-45%) !important;
+}
 .slide-in {
     transition: 0.5s ease-in;
     transform: translateX(210%) !important;
