@@ -1,58 +1,60 @@
-$(document).ready(function () {
+const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const viewerModel = require("./models/viewerModel");
+const path = require('path');
+const app = express();
+const port = process.env.PORT || 3000;
 
-    $(".onloadShow").removeClass("visibilityNone");  //showing the three dots.
+app.use(cors());
+app.use(express.static(path.join(__dirname + "/public")));
+app.set('view engine', 'ejs');
+app.set("views", path.join(__dirname + "/public/views"));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
-    $(".one").addClass("animate"); //adding the animate class to the three dots sequentially.
-    setTimeout(function () {
-        $(".two").addClass("animate");
-        setTimeout(function () {
-            $(".three").addClass("animate");
-        }, 100);
-    }, 100);
-    setTimeout(function () {
-        $(".onloadShow").addClass("visibilityNone"); //removing the three dots.
-        $(".totalContainer").removeClass("visibilityNone"); //showing the document after loading the three dots animation.
-    }, 500);
+
+app.get("/", async (req, res) => {
+    res.render("index");
 });
 
-
-
-function togglingClasses() {
-    $(".Name").toggleClass("visibilityNone");
-    $(".socialSection").toggleClass("visibilityNone");
-    $(".totalContainer").toggleClass("background");
-    $(".hamBurger").toggleClass("visibilityNone");
-    $(".hamBurgerClose").toggleClass("visibilityNone");
-
-}
-$(".hamBurger").click(function () {
-    togglingClasses();
-    $("#NavBar ul").addClass("slide-out");
-    $(".hamBurgerClose").addClass("slide-out");
-    $("#NavBar ul").removeClass("slide-in");
-    $(".hamBurgerClose").removeClass("slide-in");
-});
-$(".hamBurgerClose").click(function () {
-    $("#NavBar ul").removeClass("slide-out");
-    $(".hamBurgerClose").removeClass("slide-out");
-    $("#NavBar ul").addClass("slide-in");
-    $(".hamBurgerClose").addClass("slide-in");
-    setTimeout(() => {
-        togglingClasses();
-    }, 400);
+app.get("/about", async (req, res) => {
+    res.render("about");
 });
 
+app.get("/projects", async (req, res) => {
+    res.render("projects");
+});
 
-if (window.location.pathname.includes("/index.html") || (!window.location.pathname.includes("/projects.html") && !window.location.pathname.includes("/about.html") && !window.location.pathname.includes("/skills.html"))) {
+app.get("/skills", async (req, res) => {
+    res.render("skills");
+});
 
-    // HOME PAGE JQUERY
+app.get("/tempSkills", async (req, res) => {
+    res.render("tempSkills");
+})
 
-
-    // FIXING THE TEXT LENGTH FOR MOBILE DEVICES
-    const about = window.matchMedia("(max-width: 700px)");
-    if (about.matches) {
-        $(".azeem").html("I'M AZEEM");
-        // $(".am p").html("Welcome to my digital home! As a computer science student, I am excited to share my passion for creating innovative digital solutions with you");
+app.post("/", async (req, res) => {
+    try {
+        const { name, email, message } = req.body;
+        const user = await viewerModel.findOne({ email: email });
+        if (!user) {
+            const newViewer = new viewerModel({
+                name: name,
+                email: email,
+                messages: [{ message: message }]
+            });
+            newViewer.save();
+        }
+        else {
+            await viewerModel.updateOne({ email: email }, { $push: { messages: { message: message } } });
+        }
     }
-}
+    catch (error) {
+        console.log(error.message);
+    }
+    res.redirect("/");
+})
+app.listen(port, () => {
+    console.log("Listening!");
+})
