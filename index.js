@@ -37,7 +37,8 @@ app.get("/tempSkills", async (req, res) => {
 
 app.post("/", async (req, res) => {
     try {
-        const { name, email, message } = req.body;
+        const { name, message } = req.body;
+        const email = req.body.email.toLowerCase();
         const user = await viewerModel.findOne({ email: email });
         if (!user) {
             const newViewer = new viewerModel({

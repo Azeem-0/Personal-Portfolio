@@ -395,6 +395,9 @@ form h1 {
 
     .submitButton {
         font-size: 0.5rem;
+        width: unset;
+        height: unset;
+        padding: 5px 10px;
     }
 }
 
