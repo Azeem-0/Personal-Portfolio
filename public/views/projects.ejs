@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azeem | Projects</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/projects.css">
+    <link rel="icon" type="image/x-icon" sizes="200x200" href="Images/Favicon.png">
+</head>
+
+<body id="ProjectPage">
+    <div class="mouseHead displayNone">
+        <div class="mouseOutAndDot">
+            <div class="mouseOut">
+            </div>
+            <div class="mouseDot">
+            </div>
+        </div>
+    </div>
+    <span class="onloadShow displayNone">
+        <div class="one round"></div>
+        <div class="two round"></div>
+        <div class="three round"></div>
+    </span>
+    <div class="totalContainer displayNone">
+        <section id="NavBar">
+            <span class="logoContainer">
+                <a href="/"><img src="Images/Logo.png" alt="A"></a>
+            </span>
+            <div class="minNavigation">
+                <ul>
+                    <li class="nav HomePage"><a href="/">HOME</a></li>
+                    <li class="nav"><a href="projects">PROJECTS</a></li>
+                    <li class="nav"><a href="skills">EXPRESTISE</a></li>
+                    <li class="nav"><a href="about">ABOUT ME</a></li>
+                </ul>
+            </div>
+            <div class="hamBurger hb">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="hamBurgerClose hb displayNone">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="borderBottom">
+                <div class="fillBottom">
+
+                </div>
+            </div>
+        </section>
+        <section id="Projects">
+            <div class="projects">
+                <button class="prevDiv" onclick="moveProject(-1)">
+                    ❮
+                </button>
+                <div class="projects corousel-container">
+                    <div class="projectMiddle">
+                        <div class="project1 slideDown displayNone">
+                            <div class="projectHeading">
+                                <h1>MY PORTFOLIO</h1>
+                            </div>
+                            <div class="lp lp1">
+                                <img class="img" src="Images/Cv.png" alt="">
+                                <div class="usedTools">
+                                    <img src="Images/html.png" alt="">
+                                    <img src="Images/css.png" alt="">
+                                    <img src="Images/javascript.png" alt="">
+                                    <img src="Images/jquery.png" alt="">
+                                </div>
+                                <div class="corouselDots">
+                                    <button class="dot1 active" onclick="makeProjectActive(1)"></button>
+                                    <button class="dot2 " onclick="makeProjectActive(2)"></button>
+                                    <button class="dot3 " onclick="makeProjectActive(3)"></button>
+                                </div>
+                            </div>
+                            <div class="rp">
+                                <p class="rp-1">
+                                    My personal portfolio website is the culmination of my work and passion. It's a
+                                    digital canvas that showcases my projects, skills, and experiences, offering a
+                                    window into my creative journey.
+                                </p>
+                                <p>Website Link : <a href="#">Click Here...</a></p>
+                            </div>
+                        </div>
+                        <div class="project2 displayNone">
+                            <div class="projectHeading">
+                                <h1>TRIP TOGETHER</h1>
+                            </div>
+                            <div class="lp lp2">
+                                <img loading="lazy" class="img" src="Images/TT.png" alt="">
+                                <div class="usedTools">
+                                    <img loading="lazy" src="Images/reactjs.png" alt="">
+                                    <img loading="lazy" src="Images/MongoDB.png" alt="">
+                                    <img loading="lazy" src="Images/NodeJS.png" alt="">
+                                    <img loading="lazy" src="Images/jwtImage.webp" alt="">
+                                </div>
+                                <div class="corouselDots">
+                                    <button class="dot1 active" onclick="makeProjectActive(1)"></button>
+                                    <button class="dot2 " onclick="makeProjectActive(2)"></button>
+                                    <button class="dot3 " onclick="makeProjectActive(3)"></button>
+                                </div>
+                            </div>
+                            <div class="rp">
+                                <p class="rp-1">
+                                    The Trip Together project aims to address transportation challenges in our
+                                    community by establishing a web-based platform that connects individuals seeking
+                                    affordable and convenient rides
+                                </p>
+                                <p>Website Link : <a href="https://triptogether-10dk.onrender.com/"
+                                        target="_blank">https://triptogether-10dk.onrender.com/</a>
+                                </p>
+                            </div>
+
+
+                        </div>
+                        <div class="project3 displayNone">
+                            <div class="projectHeading">
+                                <h1>PROJECT-3</h1>
+                            </div>
+                            <div class="lp lp3">
+                                <img loading="lazy" class="img" src="Images/Cv.png" alt="">
+                                <div class="usedTools">
+                                    <img loading="lazy" src="Images/html.png" alt="">
+                                    <img loading="lazy" src="Images/css.png" alt="">
+                                    <img loading="lazy" src="Images/javascript.png" alt="">
+                                    <img loading="lazy" src="Images/jquery.png" alt="">
+                                </div>
+                                <div class="corouselDots">
+                                    <button class="dot1 active" onclick="makeProjectActive(1)"></button>
+                                    <button class="dot2 " onclick="makeProjectActive(2)"></button>
+                                    <button class="dot3 " onclick="makeProjectActive(3)"></button>
+                                </div>
+                            </div>
+                            <div class="rp">
+                                <p class="rp-1">The Trip Together project aims to address transportation challenges in
+                                    our
+                                    community by establishing a web-based platform that connects individuals seeking
+                                    affordable and convenient rides.
+                                </p>
+                                <p>Website Link : <a href="https://triptogether-10dk.onrender.com/"
+                                        target="_blank">https://triptogether-10dk.onrender.com/</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="nextDiv" onclick="moveProject(1)">❯</button>
+            </div>
+        </section>
+        <div class="footer">
+            <p>© 2023.Designed & Build by Azeem Shaik</p>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/7f2a891619.js" crossorigin="anonymous"></script>
+    <script>
+    </script>
+    <script src="JS/static.js"></script>
+</body>
+
+</html>
