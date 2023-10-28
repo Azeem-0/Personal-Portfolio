@@ -1,0 +1,538 @@
+/* HOME */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+#Home {
+    width: 100vw;
+    height: 97%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Name {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    margin: 50px;
+    margin-top: 5em;
+}
+
+.hey,
+.azeem {
+    color: #252D37;
+    display: flex;
+    z-index: 2;
+    transform: translateY(-20vh);
+}
+
+.shaik {
+    color: #facf0f;
+    opacity: .7;
+    display: flex;
+}
+
+.azeem {
+    transform: translateY(-14vh);
+}
+
+.doin {
+    margin: 1px;
+    display: flex;
+    font-family: 'Noto Sans JP', sans-serif;
+    transition: 0.5s ease;
+    font-size: 3.5em;
+}
+
+.am {
+    text-align: left;
+    line-height: 1.8;
+    margin: 2% 0em 20px 0em;
+}
+
+.am p {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    color: #191818;
+    opacity: .7;
+    text-align: justify;
+}
+
+
+
+/* SOCIAL SECTION */
+
+.socialSection {
+    background-color: whitesmoke;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(1.5vw + 1vh);
+    position: absolute;
+    left: 0%;
+    bottom: 6%;
+    box-shadow: 0px 2px 10px 1px #7a7373;
+    /* transform: translateX(-100%); */
+}
+
+.socialSection a {
+    margin: 2.5vh 1vw;
+    color: black;
+    text-decoration: none;
+}
+
+.socialSection a:hover {
+    transition: 0.3s ease-in;
+    color: #facf0f;
+    transform: translatey(-5%);
+}
+
+/* MIDDLE BOY IMAGE */
+
+.boyImage {
+    transition: 0.4s linear;
+    margin: 4em;
+    margin-left: 5em;
+}
+
+.boyImage img {
+    width: 20em;
+}
+
+
+/* CONTACT FORM */
+
+.contactMe {
+    transform: translateY(30vh);
+}
+
+.contactMe,
+.submitButton {
+    border-radius: 5px;
+    cursor: pointer;
+    width: 11em;
+    height: 6vh;
+    background-color: #facf0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    border: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.7em;
+    box-shadow: 0px 1px 4px 0px rgb(55, 55, 55);
+}
+
+.contactMe:hover {
+    transition: 0.5s ease-out !important;
+    transform: translatey(-10px);
+    box-shadow: 0px 1px 5px 0px white;
+    background-color: #272727;
+    color: #facf0f;
+}
+
+.contact {
+    display: flex;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 150%);
+    z-index: 4;
+    transition: 1s ease;
+    visibility: hidden;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact #contact-image {
+    width: 30em;
+    height: 28em;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contactform label {
+    margin-bottom: 1rem;
+}
+
+.contactform input,
+.contactform textarea {
+    background-color: #e7e7e7;
+    width: 15em;
+    height: 2.5em;
+    margin-bottom: 1rem;
+    border: 0;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.closeForm:hover {
+    transition: 0.5s ease;
+    color: #facf0f;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactform textarea {
+    padding: 5px 15px;
+    height: 10em;
+}
+
+.contactSideBlock {
+    width: 50vw;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input:focus,
+textarea:focus {
+    transition: 0.2s ease;
+    outline: none;
+    border-bottom: 2px solid #facf0f;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+.submitButton {
+    height: 5vh;
+}
+
+.submitButton:hover {
+    transition: 0.5s ease-in;
+    background-color: black;
+    color: #facf0f;
+}
+
+.closeForm {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    font-size: calc(1.5vw + 1.5vh);
+    cursor: pointer;
+}
+
+.contactHeading {
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 5vh;
+}
+
+.contactSideBlock {
+    width: 50vw;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: fit-content;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0em 6em;
+    gap: 0.5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+form h1 {
+    margin: 0px 0px 15px 0px;
+}
+
+::placeholder {
+    font-size: 0.8rem;
+}
+
+
+
+
+
+/* MEDIA QUEIRIES FOR WHOLE PAGE */
+
+
+/* MEDIA QUEIRIES FOR MIDDLE-CONTAINER */
+
+
+@media (max-width:700px) {
+
+    .azeem,
+    .hey {
+        display: flex;
+        font-size: 3.5em;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: bolder;
+    }
+
+    .contact form {
+        padding: 0;
+    }
+
+    .contact #contact-image {
+        display: none;
+    }
+
+    .HOMETEXT {
+        font-size: 21vw;
+    }
+
+    .contact {
+        padding: 2em;
+    }
+
+    form h1 {
+        font-size: 1.3em;
+    }
+
+    .contactform input,
+    .contactform textarea {
+        width: 40vw;
+    }
+
+    .contactform input {
+        height: 4vh;
+    }
+
+    ::placeholder {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width:450px) {
+
+    .hey,
+    .azeem {
+        font-size: 3em;
+    }
+
+    .side img {
+        width: 30px !important;
+    }
+
+    .contactHeading {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:390px) {
+
+    .hey,
+    .azeem {
+        font-size: 3.7em;
+    }
+
+    .am p {
+        font-size: 0.7em;
+    }
+
+    .contactHeading {
+        font-size: 0.5em;
+    }
+
+}
+
+@media (max-width:350px) {
+
+    .hey,
+    .azeem {
+        font-size: 3em;
+    }
+}
+
+
+/* MEDIA QUERIES FOR CONTACT BUTTON */
+
+@media (max-width:900px) {
+    .contactMe {
+        height: 7vh;
+        width: 15vw;
+        font-size: calc(0.5vw + 1vh);
+    }
+
+    .boyImage {
+        position: absolute;
+        margin-left: 0px;
+        margin: 0px;
+        opacity: .6;
+    }
+
+}
+
+@media (max-width:540px) {
+    .contactMe {
+        width: 10em;
+        height: 4vh;
+        font-size: calc(0.5vw + 0.8vh);
+    }
+
+    .submitButton {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width:350px) {
+
+    .contactMe,
+    .submitButton {
+        font-size: calc(0.2vw + 0.8vh);
+    }
+
+    .doin {
+        font-size: 1em;
+    }
+}
+
+/* MEDIA-QUERIES FOR SOCIAL MEDIA SECTION */
+
+@media (max-width:950px) {
+    .socialSection {
+        width: 100vw;
+        background-color: transparent;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 0px 0px 0px white;
+        transition: 5s ease !important;
+    }
+
+    .socialSection a {
+        font-size: 1.2em;
+    }
+
+    .Name {
+        align-items: normal;
+        margin: 0px;
+    }
+
+    .am {
+        text-align-last: left;
+    }
+
+    .am p {
+        color: black;
+        opacity: 0.9;
+        font-size: .8em;
+    }
+
+    .contactMe {
+        margin: 0px;
+    }
+}
+
+
+
+/* JAVA SCRIPT USING CLASSES */
+
+
+l1 {
+    color: #facf0f;
+}
+
+.contactslide {
+    animation: cslideup 1s ease;
+    transition: 0.2s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cslideup {
+    0% {
+        box-shadow: 0px 2px 10px 2px rgb(55, 55, 55);
+    }
+
+    75% {
+        box-shadow: 0px 2px 10px 2px rgb(55, 55, 55);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+
+/* .textinc{
+    animation-name: incanddec;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: 0.5s ease;
+}
+
+@keyframes incanddec {
+    0%{
+        font-size: 3.8rem;
+    }
+    50%{
+        font-size: 3.5rem;
+    }
+    75%{
+        font-size: 3.3;
+    }
+    100%{
+        font-size: 4rem;
+    }
+    
+} */
+
+.contactZooming {
+    animation: contactZooming 4s linear infinite;
+    transition: 0.5s ease;
+}
+
+@keyframes contactZooming {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.down {
+    transition: 0.3s ease-in;
+    animation: down 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes down {
+    0% {}
+
+    100% {
+        transform: translateY(0vh);
+    }
+
+}

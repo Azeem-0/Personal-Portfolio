@@ -1,0 +1,337 @@
+/* PROJECT PAGE STYLING */
+
+.PROJECTTEXT {
+    font-size: 8em;
+    color: black;
+    position: absolute;
+    top: 0%;
+    left: -2%;
+    opacity: .1;
+    writing-mode: vertical-rl;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+
+}
+
+#Projects {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* MIDDLE BLOCKS FOR PROJECT PAGE */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    position: relative;
+}
+
+
+.project1,
+.project2,
+.project3 {
+    display: flex;
+    width: 80vw;
+    height: 20vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5%;
+    position: relative;
+}
+
+.lp {
+    width: fit-content;
+    height: fit-content;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.rp {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    background-color: #e7e7e7;
+    flex-direction: column;
+    padding: 1em;
+    margin-left: -15vw;
+    z-index: 2;
+    gap: 1em;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
+}
+
+.rp p {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    color: #191818;
+    opacity: .7;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+.lp .img {
+    width: 35em;
+    transition: 0.5s linear;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+}
+
+.projectHeading {
+    position: absolute;
+    top: -5em;
+    right: 2em;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #facf0f;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* TOOLS USED */
+.usedTools {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 115%;
+    right: 27%;
+}
+
+.usedTools img {
+    width: 30px;
+    margin: 20%;
+}
+
+
+
+/* COROUSEL SLIDING STYLES */
+
+.nextDiv,
+.prevDiv {
+    color: black;
+    background-color: transparent;
+    width: 4%;
+    height: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.5em;
+    border: 0px solid black;
+
+}
+
+.nextDiv {
+    transform: rotate(90deg) translateX(250%)
+}
+
+.prevDiv {
+    transform: rotate(90deg) translateX(-150%);
+}
+
+.corouselDots {
+    flex-direction: column;
+    position: absolute;
+    top: 26%;
+    display: flex;
+    left: 105%;
+    align-items: center;
+    justify-content: center;
+}
+
+.corouselDots button {
+    width: 0.6em;
+    height: 0.6em;
+    margin: 60%;
+    border-radius: 100%;
+    background-color: rgb(163 163 163);
+    cursor: pointer;
+    border: 0px solid black;
+}
+
+
+
+
+/* JAVA SCRIPT CLASSES FOR PROJECT PAGE */
+
+.active {
+    transition: 0.2s ease;
+    background-color: #facf0f !important;
+    width: 0.8em !important;
+    height: 0.8em !important;
+}
+
+
+
+
+/* MEDIA QUERIES FOR PROJECT PAGE */
+
+
+@media (max-width:700px) {
+
+    .prevDiv {
+        transform: rotate(90deg) translateX(-200%);
+
+    }
+
+    .nextDiv {
+        transform: rotate(90deg) translateX(300%);
+    }
+
+    .projectHeading {
+        width: 22vw;
+    }
+
+    .lp .img {
+        width: 20em;
+    }
+
+    .rp .rp-1 {
+        display: none;
+    }
+
+    .rp p {
+        font-size: 0.8em;
+    }
+
+    .rp {
+        width: 100%;
+        margin: 0;
+        box-shadow: unset;
+        background: transparent;
+        padding: 0;
+    }
+
+    .projectHeading {
+        top: -30%;
+        width: fit-content;
+        height: fit-content;
+        font-size: 0.8em;
+        background-color: transparent;
+    }
+
+    .project1,
+    .project2,
+    .project3 {
+        flex-direction: column;
+        margin-top: 0%;
+        height: fit-content;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .usedTools {
+        display: none;
+    }
+
+    .usedTools img {
+        margin-bottom: 50%;
+        width: 15px;
+    }
+
+    .projectHeading {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        /* margin-bottom: 5%; */
+    }
+
+    .corouselDots {
+        display: none;
+    }
+
+    .prevDiv,
+    .nextDiv {
+        width: 10%;
+        height: 5%;
+    }
+
+    .prevDiv {
+        transform: rotate(90deg) translateX(-90%);
+    }
+
+    .nextDiv {
+        transform: rotate(90deg) translateX(120%);
+    }
+
+    .footer {
+        position: sticky;
+    }
+}
+
+@media (max-width:450px) {
+    .projectHeading {
+        font-size: 0.8em;
+    }
+
+    .rp p {
+        font-size: 0.5em;
+    }
+
+}
+
+
+/* ANIMATION CLASSES FOR PROJECT PAGE */
+
+
+.slideDown {
+    animation: slideDown 1.2s ease;
+    transition: 0.5s ease;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: .5;
+        transform: translateY(-40%);
+    }
+
+    50% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+}
+
+.slideUp {
+    animation: slideUp 1.2s ease;
+    transition: 0.5s ease;
+    /* animation-direction: alternate-reverse; */
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: .5;
+        transform: translateY(50%);
+    }
+
+    50% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+}

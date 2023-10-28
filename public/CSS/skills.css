@@ -1,0 +1,346 @@
+/* ABOUT SECTION MIDDLE */
+
+#Skills {
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adjust {
+    margin-top: 4.5em;
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+
+
+/* MIDDLE CONTAINER FOR ABOUT SECTION */
+
+
+.skilldescription {
+    width: 40vw;
+    line-height: 1.5;
+    position: absolute;
+    top: 21%;
+    left: 8%;
+    text-align: justify;
+    transition: 2s ease;
+}
+
+.skilldescription p {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    color: #191818;
+    opacity: .8;
+    margin-bottom: 20px;
+}
+
+.heading button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    background-color: #facf0f;
+    width: 10em;
+    height: 3.3em;
+    border-radius: 5px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.heading button:hover {
+    transition: 0.5s ease-in;
+}
+
+.heading button {
+    font-size: 1em;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+.bgskillImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .8;
+    z-index: -1;
+}
+
+.bgskillImage img {
+    width: 27em;
+    opacity: .7;
+}
+
+
+/* ICONS USED FOR SHOWING SKILL SET */
+
+.iconshead {
+    position: absolute;
+    right: 3%;
+    bottom: 12%;
+    border-radius: 8px;
+    width: 45vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
+}
+
+.icons {
+    width: 40vw;
+    height: 45vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons img {
+    width: 2.5rem;
+}
+
+.iconImagesHead {
+    display: flex;
+    align-items: center;
+}
+
+.iconImages {
+    border: 2px solid yellow;
+    margin: 20px 0px;
+    display: flex;
+    width: 4em;
+    height: 4em;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+}
+
+.iconImages:hover {
+    transition: 0.2s ease-in;
+    border: 3px solid #7c7c7c;
+}
+
+
+
+/* RATINGS FILLED FOR THE ICONS */
+
+.rating {
+    position: relative;
+    margin-left: 5em;
+    border-radius: 5px;
+    margin-left: 5em;
+    background-color: grey;
+    height: 0.4em;
+    width: 50%;
+}
+
+.ratingFill {
+    height: 0.4em;
+    border-radius: 5px;
+}
+
+
+
+
+.cpp,
+.c {
+    width: 100%;
+}
+
+.python {
+    width: 80%;
+}
+
+.html {
+    width: 75%;
+}
+
+.css {
+    width: 70%;
+}
+
+.js {
+    width: 65%;
+}
+
+.java {
+    width: 65%;
+}
+
+.bootstrap {
+    width: 70%;
+}
+
+.react {
+    width: 90%;
+}
+
+.nodejs {
+    width: 85%;
+}
+
+.mongodb {
+    width: 80%;
+}
+
+.jquery {
+    width: 70%;
+}
+
+.icons {
+    margin-left: 11%;
+}
+
+.cricket {
+    width: 80%;
+}
+
+
+
+/* JAVASCRIPT USING CLASSES */
+
+
+.skillButtonSlide {
+    animation: skillButtonSlide 1s ease;
+    transition: 0.5s ease;
+}
+
+@keyframes skillButtonSlide {
+    0% {
+        transform: translateY(-250%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+
+}
+
+
+.skillDescriptionSlide {
+    animation: skillDescriptionSlide 1s ease;
+    transition: 0.5s ease;
+}
+
+@keyframes skillDescriptionSlide {
+    0% {
+        transform: translateX(-35em);
+    }
+
+    100% {
+        transform: translateX(0em);
+    }
+
+}
+
+
+/* MEDIA QUERIES FOR SKILLS PAGE */
+
+@media(max-width:1030px) {
+    .adjust {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skilldescription,
+    .iconshead {
+        background: white;
+        border-radius: 10px;
+        position: static;
+        margin-top: 6em;
+        width: 80vw;
+        height: 60vh;
+        box-shadow: 0px 2px 8px 1px #7a7373;
+    }
+
+    .heading button {
+        cursor: pointer;
+    }
+
+    .skilldescription p {
+        margin: 5%;
+        font-size: 0.94em;
+    }
+
+    .icons {
+        margin-left: 5%;
+        height: 50vh;
+        width: 65vw;
+    }
+
+    .rating {
+        width: 60%;
+        margin-left: 4em;
+    }
+}
+
+@media (max-width:600px) {
+    .skillSet .heading {
+        width: 8em;
+        height: 3em;
+    }
+
+    .heading button {
+        font-size: 0.8em;
+    }
+
+    .rating {
+        width: 50%;
+        margin-left: 2.3em;
+    }
+
+    .skilldescription p {
+        font-size: 0.7em;
+    }
+
+    .SKILLTEXT {
+        font-size: 20vw;
+    }
+
+}
+
+@media (max-width:350px) {
+    .skilldescription p {
+        font-size: 0.55em;
+    }
+
+    .rating {
+        margin-left: 1.5em;
+    }
+
+}
+
+/* ANIMATION FOR THE AUTO FILL OF RATINGS ON LOAD */
+
+.ratingFill::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #facf0f;
+    border-radius: 2px;
+    animation: fill 2s;
+    transition: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fill {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: inherit;
+    }
+
+}
