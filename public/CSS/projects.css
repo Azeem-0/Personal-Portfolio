@@ -207,6 +207,11 @@
 
     .rp p {
         font-size: 0.8em;
+        opacity: 1;
+        font-weight: lighter;
+        padding: 5px;
+        letter-spacing: 0px;
+        text-align: center;
     }
 
     .rp {
