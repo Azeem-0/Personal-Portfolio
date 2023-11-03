@@ -9,7 +9,7 @@ $(document).ready(async function () {
 
     var a = $("body").attr("id");
 
-    $("." + a + " a").css({ "transform": "translateY(-2px)", "transition": "1s ease", "color": "#f6d334" }); //Adding translate for the present page navigation button.
+    $("." + a + " a").css({ "transform": "translateY(-5px)", "transition": "1s ease", "color": "#f6d334" }); //Adding translate for the present page navigation button.
 
     $("." + a).css({ "pointer-events": "none" });
 
@@ -258,6 +258,37 @@ else if (window.location.pathname.includes("/projects")) {
         projectPhoto3.style.transform = `translate3d(${-(x / 60)}px, ${-(y / 60)}px,0)`;
     });
 
+
+
+    //TO BLUR IMAGES BEFORE LOADING (LAZY LOAD IMAGES)
+
+    const blurImages = document.querySelectorAll(".p-image-blur img");
+    const blurDiv = document.querySelectorAll(".p-image-blur");
+
+    const showImageProjects = (image) => {
+        image.classList.add("loaded-image");
+        blurDiv.forEach((ele, ind) => {
+            if (blurImages[ind] === image) {
+                ele.classList.add("unload-image-blur");
+            }
+        });
+    }
+
+    blurImages.forEach((image) => {
+        if (image.complete) {
+            showImageProjects(image);
+        }
+        else {
+            image.addEventListener("load", () => {
+                image.classList.add("loaded-image");
+                blurDiv.forEach((ele, ind) => {
+                    if (blurImages[ind] === image) {
+                        ele.classList.add("unload-image-blur");
+                    }
+                });
+            });
+        }
+    })
 }
 else if (window.location.pathname.includes("/about")) {
     const image = document.querySelector(".blur-image img");
