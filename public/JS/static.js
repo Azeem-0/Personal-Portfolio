@@ -259,3 +259,17 @@ else if (window.location.pathname.includes("/projects")) {
     });
 
 }
+else if (window.location.pathname.includes("/about")) {
+    const image = document.querySelector(".blur-image img");
+    const blurredImage = document.querySelector(".blur-image");
+    const showImage = () => {
+        image.classList.add("loaded-image");
+        blurredImage.classList.add("unload-blur-image");
+    }
+    if (image.complete) {
+        showImage();
+    }
+    else {
+        image.addEventListener("load", showImage);
+    }
+}

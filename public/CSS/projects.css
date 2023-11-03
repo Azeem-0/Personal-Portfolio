@@ -1,17 +1,4 @@
 /* PROJECT PAGE STYLING */
-
-.PROJECTTEXT {
-    font-size: 8em;
-    color: black;
-    position: absolute;
-    top: 0%;
-    left: -2%;
-    opacity: .1;
-    writing-mode: vertical-rl;
-    /* font-family: 'Noto Sans JP', sans-serif; */
-
-}
-
 #Projects {
     height: 100vh;
     width: 100vw;
@@ -21,10 +8,7 @@
     flex-direction: column;
 }
 
-
-
 /* MIDDLE BLOCKS FOR PROJECT PAGE */
-
 .projects {
     display: flex;
     justify-content: center;
@@ -33,7 +17,6 @@
     width: 90vw;
     position: relative;
 }
-
 
 .project1,
 .project2,
@@ -102,6 +85,13 @@
     padding: 5px 10px;
 }
 
+/* BLURRED IMAGES STYLING */
+.p-image-blur {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* TOOLS USED */
 .usedTools {
     display: flex;
@@ -116,10 +106,7 @@
     margin: 20%;
 }
 
-
-
 /* COROUSEL SLIDING STYLES */
-
 .nextDiv,
 .prevDiv {
     color: black;
@@ -133,7 +120,6 @@
     border-radius: 10px;
     font-size: 1.5em;
     border: 0px solid black;
-
 }
 
 .nextDiv {
@@ -164,11 +150,7 @@
     border: 0px solid black;
 }
 
-
-
-
 /* JAVA SCRIPT CLASSES FOR PROJECT PAGE */
-
 .active {
     transition: 0.2s ease;
     background-color: #facf0f !important;
@@ -176,17 +158,10 @@
     height: 0.8em !important;
 }
 
-
-
-
 /* MEDIA QUERIES FOR PROJECT PAGE */
-
-
 @media (max-width:700px) {
-
     .prevDiv {
         transform: rotate(90deg) translateX(-200%);
-
     }
 
     .nextDiv {
@@ -255,7 +230,6 @@
         left: 0%;
         right: 0%;
         bottom: 0%;
-        /* margin-bottom: 5%; */
     }
 
     .corouselDots {
@@ -289,13 +263,9 @@
     .rp p {
         font-size: 0.5em;
     }
-
 }
 
-
 /* ANIMATION CLASSES FOR PROJECT PAGE */
-
-
 .slideDown {
     animation: slideDown 1.2s ease;
     transition: 0.5s ease;
@@ -315,13 +285,11 @@
         opacity: 1;
         transform: translateY(0%);
     }
-
 }
 
 .slideUp {
     animation: slideUp 1.2s ease;
     transition: 0.5s ease;
-    /* animation-direction: alternate-reverse; */
 }
 
 @keyframes slideUp {
@@ -338,5 +306,4 @@
         opacity: 1;
         transform: translateY(0%);
     }
-
 }

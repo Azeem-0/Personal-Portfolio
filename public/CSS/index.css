@@ -60,10 +60,7 @@
     text-align: justify;
 }
 
-
-
 /* SOCIAL SECTION */
-
 .socialSection {
     background-color: whitesmoke;
     width: fit-content;
@@ -74,7 +71,6 @@
     left: 0%;
     bottom: 6%;
     box-shadow: 0px 2px 10px 1px #7a7373;
-    /* transform: translateX(-100%); */
 }
 
 .socialSection a {
@@ -90,7 +86,6 @@
 }
 
 /* MIDDLE BOY IMAGE */
-
 .boyImage {
     transition: 0.4s linear;
     margin: 4em;
@@ -101,9 +96,7 @@
     width: 20em;
 }
 
-
 /* CONTACT FORM */
-
 .contactMe {
     transform: translateY(30vh);
 }
@@ -272,16 +265,8 @@ form h1 {
     font-size: 0.8rem;
 }
 
-
-
-
-
 /* MEDIA QUEIRIES FOR WHOLE PAGE */
-
-
 /* MEDIA QUEIRIES FOR MIDDLE-CONTAINER */
-
-
 @media (max-width:700px) {
 
     .azeem,
@@ -356,7 +341,6 @@ form h1 {
     .contactHeading {
         font-size: 0.5em;
     }
-
 }
 
 @media (max-width:350px) {
@@ -367,9 +351,7 @@ form h1 {
     }
 }
 
-
 /* MEDIA QUERIES FOR CONTACT BUTTON */
-
 @media (max-width:900px) {
     .contactMe {
         height: 7vh;
@@ -383,7 +365,6 @@ form h1 {
         margin: 0px;
         opacity: .6;
     }
-
 }
 
 @media (max-width:540px) {
@@ -414,7 +395,6 @@ form h1 {
 }
 
 /* MEDIA-QUERIES FOR SOCIAL MEDIA SECTION */
-
 @media (max-width:950px) {
     .socialSection {
         width: 100vw;
@@ -450,11 +430,7 @@ form h1 {
     }
 }
 
-
-
 /* JAVA SCRIPT USING CLASSES */
-
-
 l1 {
     color: #facf0f;
 }
@@ -477,33 +453,7 @@ l1 {
     100% {
         transform: translateY(0);
     }
-
 }
-
-
-
-/* .textinc{
-    animation-name: incanddec;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    transition: 0.5s ease;
-}
-
-@keyframes incanddec {
-    0%{
-        font-size: 3.8rem;
-    }
-    50%{
-        font-size: 3.5rem;
-    }
-    75%{
-        font-size: 3.3;
-    }
-    100%{
-        font-size: 4rem;
-    }
-    
-} */
 
 .contactZooming {
     animation: contactZooming 4s linear infinite;
@@ -522,7 +472,6 @@ l1 {
     100% {
         transform: scale(1);
     }
-
 }
 
 .down {
@@ -537,5 +486,4 @@ l1 {
     100% {
         transform: translateY(0vh);
     }
-
 }
