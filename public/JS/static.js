@@ -34,8 +34,8 @@ $(document).ready(async function () {
     }, 500);
 
 
-    $(".hey").addClass("down");
-    $(".azeem").addClass("down");
+    // $(".hey").addClass("down");
+    // $(".azeem").addClass("down");
     $(".contactMe").addClass("contactslide");
     $(".socialSection").addClass("socialSectionSliding");
 });
@@ -114,18 +114,31 @@ if (window.location.pathname.includes("/index") || (!window.location.pathname.in
     //     count++;
     // }, 200);
 
+    const myFunc = (e) => {
+        const element = e.toElement;
+        console.log(element);
+        let tl = gsap.timeline();
 
-    // for (var i = 0; i < 19; i++) {
-    //     $(".doin")[i].addEventListener('mouseover', myFunc);
-    // }
-
-    function myFunc(e) {
-        $("this").css({ "font-size": "3em" });
-        $(this).addClass("textinc");
-        setTimeout(function () {
-            $(".doin").removeClass("textinc");
-        }, 3000);
+        tl.to(element, { scale: 1.3, duration: 0.25, ease: 'none', stagger: 0.3 });
+        tl.to(element, { scale: 1, duration: 0.2, ease: 'none', stagger: 0.3 });
     }
+
+    for (var i = 0; i < 19; i++) {
+        $(".doin")[i].addEventListener('mouseover', myFunc);
+    }
+
+
+    function showText() {
+        gsap.fromTo('.doin', { y: 35, opacity: 0, duration: 0, ease: 'elastic.out' }, { y: 0, opacity: 1, stagger: 0.1, duration: 0.2, ease: 'elastic.out' });
+    }
+    showText();
+    // function myFunc(e) {
+    //     $("this").css({ "font-size": "3em" });
+    //     $(this).addClass("textinc");
+    //     setTimeout(function () {
+    //         $(".doin").removeClass("textinc");
+    //     }, 3000);
+    // }
 
     // $(".doin").on("mouseover", () => {
     //     document.querySelector(this);

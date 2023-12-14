@@ -25,7 +25,7 @@
     color: #252D37;
     display: flex;
     z-index: 2;
-    transform: translateY(-20vh);
+    /* transform: translateY(-20vh); */
 }
 
 .shaik {
@@ -35,7 +35,7 @@
 }
 
 .azeem {
-    transform: translateY(-14vh);
+    /* transform: translateY(-14vh); */
 }
 
 .doin {
@@ -74,7 +74,7 @@
 }
 
 .socialSection a {
-    margin: 2.5vh 1vw;
+    margin: 15px;
     color: black;
     text-decoration: none;
 }
@@ -83,6 +83,10 @@
     transition: 0.3s ease-in;
     color: #facf0f;
     transform: translatey(-5%);
+}
+
+.socialSection a img {
+    width: 28px;
 }
 
 /* MIDDLE BOY IMAGE */
@@ -149,7 +153,7 @@
     width: 30em;
     height: 28em;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .contactform {
@@ -407,7 +411,11 @@ form h1 {
     }
 
     .socialSection a {
-        font-size: 1.2em;
+        margin: 10px;
+    }
+
+    .socialSection a img {
+        width: 1.5em;
     }
 
     .Name {
