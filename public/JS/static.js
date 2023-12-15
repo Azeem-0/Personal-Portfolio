@@ -33,9 +33,6 @@ $(document).ready(async function () {
         $(".heading button").addClass("skillButtonSlide");
     }, 500);
 
-
-    // $(".hey").addClass("down");
-    // $(".azeem").addClass("down");
     $(".contactMe").addClass("contactslide");
     $(".socialSection").addClass("socialSectionSliding");
 });
@@ -99,21 +96,6 @@ if (window.location.pathname.includes("/index") || (!window.location.pathname.in
 
     // ANIMATION TO SHOW A HOVER OVER THE MAIN TEXT IN HOME PAGE
 
-    // var count = 0;
-
-    // setInterval(() => {
-    //     if (count > 6) {
-    //         setTimeout(() => {
-    //             for (var v = 0; v < 6; v++) {
-    //                 document.querySelectorAll(".shaik .doin")[i].classList.remove("textinc");
-    //             }
-    //         }, 500);
-    //         count = 0;
-    //     }
-    //     document.querySelectorAll(".shaik .doin")[count].classList.add("textinc");
-    //     count++;
-    // }, 200);
-
     const myFunc = (e) => {
         const element = e.toElement;
         console.log(element);
@@ -127,24 +109,10 @@ if (window.location.pathname.includes("/index") || (!window.location.pathname.in
         $(".doin")[i].addEventListener('mouseover', myFunc);
     }
 
-
     function showText() {
         gsap.fromTo('.doin', { y: 35, opacity: 0, duration: 0, ease: 'elastic.out' }, { y: 0, opacity: 1, stagger: 0.1, duration: 0.2, ease: 'elastic.out' });
     }
     showText();
-    // function myFunc(e) {
-    //     $("this").css({ "font-size": "3em" });
-    //     $(this).addClass("textinc");
-    //     setTimeout(function () {
-    //         $(".doin").removeClass("textinc");
-    //     }, 3000);
-    // }
-
-    // $(".doin").on("mouseover", () => {
-    //     document.querySelector(this);
-    //     $(".doin").css({ "tranform": "translateY(-10px)" });
-    // });
-
 
     //Guy with a laptop image parallax movement
 
@@ -316,4 +284,12 @@ else if (window.location.pathname.includes("/about")) {
     else {
         image.addEventListener("load", showImage);
     }
+
+
+    const heyThere = () => {
+        // gsap.fromTo({ '.a1'}, {}, {});
+        gsap.fromTo('.about-text', { y: 35, opacity: 0, duration: 2, ease: 'elastic.out' }, { y: 0, opacity: 1, stagger: .15, duration: 2, ease: 'elastic.out' });
+    }
+    heyThere();
 }
+

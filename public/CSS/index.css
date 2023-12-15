@@ -133,7 +133,7 @@
 .contact {
     display: flex;
     border-radius: 10px;
-    background-color: #f7f7f7;
+    background-color: white;
     width: fit-content;
     justify-content: center;
     align-items: center;
