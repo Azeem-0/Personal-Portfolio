@@ -116,16 +116,11 @@ if (window.location.pathname.includes("/index") || (!window.location.pathname.in
 
     //Guy with a laptop image parallax movement
 
-    var x_value, y_value;
-
-    const element = document.querySelector("#Home");
-
-    element.addEventListener("mouseover", (e) => {
-        const x = e.clientX;
-        const y = e.clientY;
-        const boy = document.querySelector(".boyImage");
-        boy.style.transform = `translate3d(${-(x / 70) * 0.5}px, ${-(y / 70) * 0.5}px,0)`;
-    })
+    const slidingAnimation = (e) => {
+        const boyImage = document.querySelector('.boyImage');
+        gsap.to(boyImage, { x: e.x / 50, y: e.y / 50 });
+    }
+    window.addEventListener("mousemove", slidingAnimation);
 
     // FIXING THE TEXT LENGTH FOR MOBILE DEVICES
 
@@ -224,20 +219,18 @@ else if (window.location.pathname.includes("/projects")) {
         ShowProject(start);
     }
 
-    var x_value, y_value;
+    // ANIMATING PROJECT IMAGE
 
-    const element = document.querySelector("#ProjectPage");
-
-    element.addEventListener("mouseover", (e) => {
-        const x = e.clientX;
-        const y = e.clientY;
-        const projectPhoto1 = document.querySelector(".lp1 img");
-        const projectPhoto2 = document.querySelector(".lp2 img");
-        const projectPhoto3 = document.querySelector(".lp3 img");
-        projectPhoto1.style.transform = `translate3d(${-(x / 60)}px, ${-(y / 60)}px,0)`;
-        projectPhoto2.style.transform = `translate3d(${-(x / 60)}px, ${-(y / 60)}px,0)`;
-        projectPhoto3.style.transform = `translate3d(${-(x / 60)}px, ${-(y / 60)}px,0)`;
-    });
+    const animateProjects = (e) => {
+        console.log(e.x, e.y);
+        const projectPhoto1 = document.querySelector("#project-image1");
+        const projectPhoto2 = document.querySelector("#project-image2");
+        const projectPhoto3 = document.querySelector("#project-image3");
+        gsap.to(projectPhoto1, { x: e.x / 100, y: e.y / 100, delay: 0.1 });
+        gsap.to(projectPhoto2, { x: e.x / 100, y: e.y / 100, delay: 0.1 });
+        gsap.to(projectPhoto3, { x: e.x / 100, y: e.y / 100, delay: 0.1 });
+    }
+    window.addEventListener('mousemove', animateProjects);
 
 
 
