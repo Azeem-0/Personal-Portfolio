@@ -178,6 +178,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.contactform textarea {
+    resize: none;
+}
+
 .closeForm:hover {
     transition: 0.5s ease;
     color: #facf0f;

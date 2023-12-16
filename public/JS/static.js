@@ -287,7 +287,6 @@ else if (window.location.pathname.includes("/about")) {
 
 
     const heyThere = () => {
-        // gsap.fromTo({ '.a1'}, {}, {});
         gsap.fromTo('.about-text', { y: 35, opacity: 0, duration: 2, ease: 'elastic.out' }, { y: 0, opacity: 1, stagger: .15, duration: 2, ease: 'elastic.out' });
     }
     heyThere();
