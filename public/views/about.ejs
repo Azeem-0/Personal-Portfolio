@@ -12,104 +12,74 @@
 </head>
 
 <body id="AboutPage">
-    <div class="mouseHead displayNone">
-        <div class="mouseOutAndDot">
-            <div class="mouseOut">
-            </div>
-            <div class="mouseDot">
-            </div>
-        </div>
-    </div>
-    <span class="onloadShow displayNone">
-        <div class="one round"></div>
-        <div class="two round"></div>
-        <div class="three round"></div>
-    </span>
-    <div class="totalContainer displayNone">
-        <section id="NavBar">
-            <span class="logoContainer">
-                <a href="/"><img src="Images/Logo.png" alt="A"></a>
-            </span>
-            <div class="minNavigation">
-                <ul>
-                    <li class="nav HomePage"><a href="/">HOME</a></li>
-                    <li class="nav ProjectPage"><a href="projects">PROJECTS</a></li>
-                    <li class="nav SkillsPage"><a href="skills">EXPERTISE</a></li>
-                    <li class="nav AboutPage"><a href="about">ABOUT ME</a></li>
-                </ul>
-            </div>
-            <div class="hamBurger hb">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="hamBurgerClose hb displayNone">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <div class="borderBottom">
-                <div class="fillBottom">
+    <%- include('./partials/mouse') %>
+        <%- include('./partials/onLoad') %>
+            <div class="totalContainer displayNone">
+                <%- include('./partials/header') %>
+                    <section id="AboutMe">
+                        <div class="aboutMe">
+                            <div class="myImage">
+                                <div class="blur-image">
+                                    <img src="Images/Original/Azeem-Original.jpg" alt="">
+                                </div>
+                                <div class="frame">
+                                </div>
+                            </div>
 
-                </div>
+                            <div class="descriptionSection">
+                                <div class="a1">
+                                    <h1>
+                                        <span class="about-text">H</span>
+                                        <span class="about-text">E</span>
+                                        <span class="about-text">Y&nbsp;&nbsp;</span>
+                                        <span class="about-text">T</span>
+                                        <span class="about-text">H</span>
+                                        <span class="about-text">E</span>
+                                        <span class="about-text">R</span>
+                                        <span class="about-text">E</span>
+                                        <span class="about-text">!</span>
+                                    </h1>
+                                </div>
+                                <div class="a2">
+                                    <p>My name is Shaik Azeem Pasha and I am particularly passionate about using
+                                        technology
+                                        to
+                                        create innovative solutions and
+                                        improve the way we live and work.
+                                        I believe that my diverse interests and experiences have helped me develop a
+                                        well-rounded
+                                        perspective and a strong sense of empathy for others.
+                                        Overall, I am a driven and enthusiastic individual who is committed to
+                                        continuous
+                                        learning
+                                        and personal growth.
+                                        Thank you for taking the time to learn more about me. I am excited about the
+                                        opportunity
+                                        to
+                                        contribute my skills and knowledge to new and exciting projects.
+                                    </p>
+                                </div>
+                                <div class="aboutSocial">
+                                    <a href="https://www.instagram.com/azeem.shaik.16906/" target="_blank"><img
+                                            src="../Images/instagram.png" alt="Instagram"></a>
+                                    <a href="https://github.com/Azeem-0" target="_blank"><img src="../Images/Github.png"
+                                            alt="Github"></a>
+                                    <a href="https://www.linkedin.com/in/azeemshaik025/" target="_blank"><img
+                                            src="../Images/linkedin.png" alt="Linkedin"></a>
+                                    <a href="mailto:azeemshaik025@gmail.com" target="_blank"><img
+                                            src="../Images/email.png" alt="Email"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
             </div>
-        </section>
-        <section id="AboutMe">
-            <div class="aboutMe">
-                <div class="myImage">
-                    <div class="blur-image">
-                        <img src="Images/Original/Azeem-Original.jpg" alt="">
-                    </div>
-                    <div class="frame">
-                    </div>
-                </div>
-
-                <div class="descriptionSection">
-                    <div class="a1">
-                        <h1>
-                            <span class="about-text">H</span>
-                            <span class="about-text">E</span>
-                            <span class="about-text">Y&nbsp;&nbsp;</span>
-
-                            <span class="about-text">T</span>
-                            <span class="about-text">H</span>
-                            <span class="about-text">E</span>
-                            <span class="about-text">R</span>
-                            <span class="about-text">E</span>
-                            <span class="about-text">!</span>
-                        </h1>
-                    </div>
-                    <div class="a2">
-                        <p>My name is Shaik Azeem Pasha and I am particularly passionate about using technology to
-                            create innovative solutions and
-                            improve the way we live and work.
-                            I believe that my diverse interests and experiences have helped me develop a well-rounded
-                            perspective and a strong sense of empathy for others.
-                            Overall, I am a driven and enthusiastic individual who is committed to continuous learning
-                            and personal growth.
-                            Thank you for taking the time to learn more about me. I am excited about the opportunity to
-                            contribute my skills and knowledge to new and exciting projects.
-                        </p>
-                    </div>
-                    <div class="aboutSocial">
-                        <a href="https://www.instagram.com/azeem.shaik.16906/" target="_blank"><img
-                                src="../Images/instagram.png" alt="Instagram"></a>
-                        <a href="https://github.com/Azeem-0" target="_blank"><img src="../Images/Github.png"
-                                alt="Github"></a>
-                        <a href="https://www.linkedin.com/in/azeemshaik025/" target="_blank"><img
-                                src="../Images/linkedin.png" alt="Linkedin"></a>
-                        <a href="mailto:azeemshaik025@gmail.com" target="_blank"><img src="../Images/email.png"
-                                alt="Email"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="footer">
-        <p>© 2023.Designed & Build by Azeem Shaik</p>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
-        integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/7f2a891619.js" crossorigin="anonymous"></script>
-    <script src="JS/static.js"></script>
+            <%- include('./partials/footer') %>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+                    integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+                <script src="https://kit.fontawesome.com/7f2a891619.js" crossorigin="anonymous"></script>
+                <script src="JS/static.js"></script>
 </body>
 
 </html>

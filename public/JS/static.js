@@ -9,7 +9,7 @@ $(document).ready(async function () {
 
     var a = $("body").attr("id");
 
-    $("." + a + " a").css({ "transform": "translateY(-5px)", "transition": "1s ease", "color": "#f6d334" }); //Adding translate for the present page navigation button.
+    $("." + a + " a").css({ "transition": "1s ease", 'border-top': '2px solid #f6d334', 'padding': '2px' }); //Adding translate for the present page navigation button.
 
     $("." + a).css({ "pointer-events": "none" });
 

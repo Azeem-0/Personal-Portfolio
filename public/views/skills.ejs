@@ -15,225 +15,195 @@
 </head>
 
 <body id="SkillsPage">
-    <div class="mouseHead displayNone">
-        <div class="mouseOutAndDot">
-            <div class="mouseOut">
-            </div>
-            <div class="mouseDot">
-            </div>
-        </div>
-    </div>
-    <div class="onloadShow displayNone">
-        <div class="one round"></div>
-        <div class="two round"></div>
-        <div class="three round"></div>
-    </div>
+    <%- include('./partials/mouse') %>
+        <%- include('./partials/onLoad') %>
 
-    <div class="totalContainer displayNone">
-        <section id="NavBar">
-            <span class="logoContainer">
-                <a href="/"><img src="Images/Logo.png" alt="A"></a>
-            </span>
-            <div class="minNavigation">
-                <ul>
-                    <li class="nav HomePage"><a href="/">HOME</a></li>
-                    <li class="nav ProjectPage"><a href="projects">PROJECTS</a></li>
-                    <li class="nav SkillsPage"><a href="skills">EXPERTISE</a></li>
-                    <li class="nav AboutPage"><a href="about">ABOUT ME</a></li>
-                </ul>
-            </div>
-            <div class="hamBurger hb">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="hamBurgerClose hb displayNone">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <div class="borderBottom">
-                <div class="fillBottom">
-
-                </div>
-            </div>
-        </section>
-        <section id="Skills">
-            <div class="adjust">
-                <div class="bgskillImage">
-                    <img src="Images/try4.jpg" alt="">
-                </div>
-                <div class="heading">
-                    <button class="skillButton" onclick="openSkillDescription()">MY SKILLS</button>
-                </div>
-                <div class="alternateDivs">
-                    <div class="skilldescription">
-                        <p>I've developed a wide range of skills from my studies, personal projects, and work
-                            experiences. I'm proficient in programming languages like C, C++, Java, Python, and web
-                            development tools like HTML, CSS, JavaScript. I've learned these through classes, hands-on
-                            projects, and my love for tech.
-                        </p>
-                        <p>
-                            Besides tech stuff, I'm great at working with people and explaining things clearly. I enjoy
-                            teamwork and can make complex ideas easy to understand. I'm a quick learner, so I can adapt
-                            to new tech and situations easily.
-                        </p>
-                        <p>
-                            In short, I'm confident in what I know, but I'm also eager to keep learning and growing. I'm
-                            always looking for chances to expand my skills and be part of exciting projects.
-                        </p>
-                    </div>
-                    <div class="iconshead">
-                        <div class="icons">
-                            <div class="iconImagesHead">
-                                <div class="iconImages" id="cpp">
-                                    <img src="Images/c.png" alt="">
-                                </div>
-                                <div class="rating">
-                                    <div class="ratingFill cpp">
-
-                                    </div>
-                                </div>
+            <div class="totalContainer displayNone">
+                <%- include('./partials/header') %>
+                    <section id="Skills">
+                        <div class="adjust">
+                            <div class="bgskillImage">
+                                <img src="Images/try4.jpg" alt="">
                             </div>
-                            <div class="iconImagesHead">
-                                <div class="iconImages" id="c">
-                                    <img src="Images/cpp.png" alt="">
-                                </div>
-                                <div class="rating">
-                                    <div class="ratingFill c">
-                                    </div>
-                                </div>
+                            <div class="heading">
+                                <button class="skillButton" onclick="openSkillDescription()">MY SKILLS</button>
                             </div>
-                            <div class="iconImagesHead">
-                                <div class="iconImages" id="python">
-                                    <img src="Images/python.png" alt="">
+                            <div class="alternateDivs">
+                                <div class="skilldescription">
+                                    <p>I've developed a wide range of skills from my studies, personal projects, and
+                                        work
+                                        experiences. I'm proficient in programming languages like C, C++, Java, Python,
+                                        and
+                                        web
+                                        development tools like HTML, CSS, JavaScript. I've learned these through
+                                        classes,
+                                        hands-on
+                                        projects, and my love for tech.
+                                    </p>
+                                    <p>
+                                        Besides tech stuff, I'm great at working with people and explaining things
+                                        clearly.
+                                        I
+                                        enjoy
+                                        teamwork and can make complex ideas easy to understand. I'm a quick learner, so
+                                        I
+                                        can
+                                        adapt
+                                        to new tech and situations easily.
+                                    </p>
+                                    <p>
+                                        In short, I'm confident in what I know, but I'm also eager to keep learning and
+                                        growing.
+                                        I'm
+                                        always looking for chances to expand my skills and be part of exciting projects.
+                                    </p>
                                 </div>
-                                <div class="rating">
-                                    <div class="ratingFill python">
+                                <div class="iconshead">
+                                    <div class="icons">
+                                        <div class="iconImagesHead">
+                                            <div class="iconImages" id="cpp">
+                                                <img src="Images/c.png" alt="">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="ratingFill cpp">
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="iconImagesHead">
-                                <div class="iconImages" id="react">
-                                    <img src="Images/reactjs.png" alt="">
-                                </div>
-                                <div class=" rating">
-                                    <div class="ratingFill react">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="iconImagesHead">
+                                            <div class="iconImages" id="c">
+                                                <img src="Images/cpp.png" alt="">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="ratingFill c">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="iconImagesHead">
+                                            <div class="iconImages" id="python">
+                                                <img src="Images/python.png" alt="">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="ratingFill python">
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="iconImagesHead">
-                                <div class="iconImages" id="mongodb">
-                                    <img src="Images/MongoDB.png" alt="">
-                                </div>
-                                <div class="rating">
-                                    <div class="ratingFill mongodb">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="iconImagesHead">
+                                            <div class="iconImages" id="react">
+                                                <img src="Images/reactjs.png" alt="">
+                                            </div>
+                                            <div class=" rating">
+                                                <div class="ratingFill react">
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="iconImagesHead">
-                                <div class="iconImages" id="nodejs">
-                                    <img src="Images/NodeJS.png" alt="">
-                                </div>
-                                <div class="rating">
-                                    <div class="ratingFill nodejs">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="iconImagesHead">
+                                            <div class="iconImages" id="mongodb">
+                                                <img src="Images/MongoDB.png" alt="">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="ratingFill mongodb">
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="iconImagesHead">
-                                <div class="iconImages" id="java">
-                                    <img src="Images/java.png" alt="">
-                                </div>
-                                <div class="rating">
-                                    <div class="ratingFill java">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="iconImagesHead">
+                                            <div class="iconImages" id="nodejs">
+                                                <img src="Images/NodeJS.png" alt="">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="ratingFill nodejs">
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="iconImagesHead">
-                                <div class="iconImages" id="html">
-                                    <img src="Images/html.png" alt="">
-                                </div>
-                                <div class="rating">
-                                    <div class="ratingFill html">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="iconImagesHead">
+                                            <div class="iconImages" id="java">
+                                                <img src="Images/java.png" alt="">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="ratingFill java">
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="iconImagesHead">
-                                <div class="iconImages" id="css">
-                                    <img src="Images/css.png" alt="">
-                                </div>
-                                <div class="rating">
-                                    <div class="ratingFill css">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="iconImagesHead">
+                                            <div class="iconImages" id="html">
+                                                <img src="Images/html.png" alt="">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="ratingFill html">
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="iconImagesHead">
-                                <div class="iconImages" id="js">
-                                    <img src="Images/javascript.png" alt="">
-                                </div>
-                                <div class="rating">
-                                    <div class="ratingFill js">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="iconImagesHead">
+                                            <div class="iconImages" id="css">
+                                                <img src="Images/css.png" alt="">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="ratingFill css">
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="iconImagesHead">
-                                <div class="iconImages" id="bootstrap">
-                                    <img src="Images/bootstrap.png" alt="">
-                                </div>
-                                <div class="rating">
-                                    <div class="ratingFill bootstrap">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="iconImagesHead">
+                                            <div class="iconImages" id="js">
+                                                <img src="Images/javascript.png" alt="">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="ratingFill js">
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="iconImagesHead">
-                                <div class="iconImages" id="jquery">
-                                    <img src="Images/jquery.png" alt="">
-                                </div>
-                                <div class="rating">
-                                    <div class="ratingFill jquery">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="iconImagesHead">
+                                            <div class="iconImages" id="bootstrap">
+                                                <img src="Images/bootstrap.png" alt="">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="ratingFill bootstrap">
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="iconImagesHead">
-                                <div class="iconImages" id="cricket">
-                                    <img src="Images/cricket.png" alt="">
-                                </div>
-                                <div class="rating">
-                                    <div class="ratingFill cricket">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="iconImagesHead">
+                                            <div class="iconImages" id="jquery">
+                                                <img src="Images/jquery.png" alt="">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="ratingFill jquery">
 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="iconImagesHead">
+                                            <div class="iconImages" id="cricket">
+                                                <img src="Images/cricket.png" alt="">
+                                            </div>
+                                            <div class="rating">
+                                                <div class="ratingFill cricket">
+
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
             </div>
-    </div>
-    <div class="socialSection">
-        <a href="https://www.instagram.com/azeem.shaik.16906/" target="_blank"><img src="../Images/instagram.png"
-                alt="Instagram"></a>
-        <a href="https://github.com/Azeem-0" target="_blank"><img src="../Images/Github.png" alt="Github"></a>
-        <a href="https://www.linkedin.com/in/azeemshaik025/" target="_blank"><img src="../Images/linkedin.png"
-                alt="Linkedin"></a>
-        <a href="mailto:azeemshaik025@gmail.com" target="_blank"><img src="../Images/email.png" alt="Email"></a>
-    </div>
-    </section>
-    <div class="footer">
-        <p>© 2023.Designed & Build by Azeem Shaik</p>
-    </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
-        integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/7f2a891619.js" crossorigin="anonymous"></script>
-    <script src="JS/static.js"></script>
+            <%- include('./partials/social') %>
+                </section>
+                <%- include('./partials/footer') %>
+                    </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+                        integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+                        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+                    <script src="https://kit.fontawesome.com/7f2a891619.js" crossorigin="anonymous"></script>
+                    <script src="JS/static.js"></script>
 </body>
 
 </html>

@@ -12,175 +12,140 @@
 </head>
 
 <body id="ProjectPage">
-    <div class="mouseHead displayNone">
-        <div class="mouseOutAndDot">
-            <div class="mouseOut">
-            </div>
-            <div class="mouseDot">
-            </div>
-        </div>
-    </div>
-    <span class="onloadShow displayNone">
-        <div class="one round"></div>
-        <div class="two round"></div>
-        <div class="three round"></div>
-    </span>
-    <div class="totalContainer displayNone">
-        <section id="NavBar">
-            <span class="logoContainer">
-                <a href="/"><img src="Images/Logo.png" alt="A"></a>
-            </span>
-            <div class="minNavigation">
-                <ul>
-                    <li class="nav HomePage"><a href="/">HOME</a></li>
-                    <li class="nav ProjectPage"><a href="projects">PROJECTS</a></li>
-                    <li class="nav SkillsPage"><a href="skills">EXPERTISE</a></li>
-                    <li class="nav AboutPage"><a href="about">ABOUT ME</a></li>
-                </ul>
-            </div>
-            <div class="hamBurger hb">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="hamBurgerClose hb displayNone">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <div class="borderBottom">
-                <div class="fillBottom">
+    <%- include('./partials/mouse') %>
+        <%- include('./partials/onLoad') %>
+            <div class="totalContainer displayNone">
+                <%- include('./partials/header') %>
+                    <section id="Projects">
+                        <div class="projects">
+                            <button class="prevDiv" onclick="moveProject(-1)">
+                                ❮
+                            </button>
+                            <div class="projects corousel-container">
+                                <div class="projectMiddle">
+                                    <div class="project1 slideDown displayNone">
+                                        <div class="projectHeading">
+                                            <h1>MY PORTFOLIO</h1>
+                                        </div>
+                                        <div class="lp lp1">
+                                            <div class="p-image-blur" id="project-image1"
+                                                style="background-image: url(../Images/Small/Cv-Small.png);">
+                                                <img class="img" src="Images/Original/Cv.png" alt="">
+                                            </div>
+                                            <div class="usedTools">
+                                                <img src="Images/html.png" alt="">
+                                                <img src="Images/css.png" alt="">
+                                                <img src="Images/javascript.png" alt="">
+                                                <img src="Images/jquery.png" alt="">
+                                            </div>
+                                            <div class="corouselDots">
+                                                <button class="dot1 active" onclick="makeProjectActive(1)"></button>
+                                                <button class="dot2 " onclick="makeProjectActive(2)"></button>
+                                                <button class="dot3 " onclick="makeProjectActive(3)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="rp">
+                                            <p class="rp-1">
+                                                My personal portfolio website is the culmination of my work and passion.
+                                                It's a
+                                                digital canvas that showcases my projects, skills, and experiences,
+                                                offering
+                                                a
+                                                window into my creative journey.
+                                            </p>
+                                            <p>Website Link : <a target="_blank"
+                                                    href="https://azeems-portfolio.onrender.com/">https://azeems-portfolio.onrender.com/</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="project2 displayNone">
+                                        <div class="projectHeading">
+                                            <h1>TRIP TOGETHER</h1>
+                                        </div>
+                                        <div class="lp lp2">
+                                            <div class="p-image-blur" id="project-image2"
+                                                style="background-image: url(../Images/Small/TT-Small.png);">
+                                                <img class="img" src="Images/Original/TT.png" alt="">
+                                            </div>
+                                            <div class="usedTools">
+                                                <img loading="lazy" src="Images/reactjs.png" alt="">
+                                                <img loading="lazy" src="Images/MongoDB.png" alt="">
+                                                <img loading="lazy" src="Images/NodeJS.png" alt="">
+                                                <img loading="lazy" src="Images/jwtImage.webp" alt="">
+                                            </div>
+                                            <div class="corouselDots">
+                                                <button class="dot1 active" onclick="makeProjectActive(1)"></button>
+                                                <button class="dot2 " onclick="makeProjectActive(2)"></button>
+                                                <button class="dot3 " onclick="makeProjectActive(3)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="rp">
+                                            <p class="rp-1">
+                                                The Trip Together project aims to address transportation challenges in
+                                                our
+                                                community by establishing a web-based platform that connects individuals
+                                                seeking
+                                                affordable and convenient rides
+                                            </p>
+                                            <p>Website Link : <a href="https://triptogether-10dk.onrender.com/"
+                                                    target="_blank">https://triptogether-10dk.onrender.com/</a>
+                                            </p>
+                                        </div>
 
-                </div>
-            </div>
-        </section>
-        <section id="Projects">
-            <div class="projects">
-                <button class="prevDiv" onclick="moveProject(-1)">
-                    ❮
-                </button>
-                <div class="projects corousel-container">
-                    <div class="projectMiddle">
-                        <div class="project1 slideDown displayNone">
-                            <div class="projectHeading">
-                                <h1>MY PORTFOLIO</h1>
-                            </div>
-                            <div class="lp lp1">
-                                <div class="p-image-blur" id="project-image1"
-                                    style="background-image: url(../Images/Small/Cv-Small.png);">
-                                    <img class="img" src="Images/Original/Cv.png" alt="">
+
+                                    </div>
+                                    <div class="project3 displayNone">
+                                        <div class="projectHeading">
+                                            <h1>ECOMMERCE STORE</h1>
+                                        </div>
+                                        <div class="lp lp3">
+                                            <div class="p-image-blur" id="project-image3"
+                                                style="background-image: url(../Images/Small/nextProject-Small.png);">
+                                                <img class="img" src="Images/Original/nextProject.jpg" alt="">
+                                            </div>
+                                            <div class="usedTools">
+                                                <img loading="lazy" src="Images/reactjs.png" alt="">
+                                                <img loading="lazy" src="Images/MongoDB.png" alt="">
+                                                <img loading="lazy" src="Images/NodeJS.png" alt="">
+                                                <img loading="lazy" src="Images/jwtImage.webp" alt="">
+                                            </div>
+                                            <div class="corouselDots">
+                                                <button class="dot1 active" onclick="makeProjectActive(1)"></button>
+                                                <button class="dot2 " onclick="makeProjectActive(2)"></button>
+                                                <button class="dot3 " onclick="makeProjectActive(3)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="rp">
+                                            <p class="rp-1">Crafted a complete Ecommerce web application using MERN
+                                                covering
+                                                everything from the database to the user interface, Made the
+                                                website faster by adding Redis caching enabling quick and smooth
+                                                shopping
+                                                for
+                                                customers.
+
+                                            </p>
+                                            <p>Github Link : <a href="https://github.com/Azeem-0/EcommerceAppClient"
+                                                    target="_blank">https://github.com/Azeem-0/</a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="usedTools">
-                                    <img src="Images/html.png" alt="">
-                                    <img src="Images/css.png" alt="">
-                                    <img src="Images/javascript.png" alt="">
-                                    <img src="Images/jquery.png" alt="">
-                                </div>
-                                <div class="corouselDots">
-                                    <button class="dot1 active" onclick="makeProjectActive(1)"></button>
-                                    <button class="dot2 " onclick="makeProjectActive(2)"></button>
-                                    <button class="dot3 " onclick="makeProjectActive(3)"></button>
-                                </div>
                             </div>
-                            <div class="rp">
-                                <p class="rp-1">
-                                    My personal portfolio website is the culmination of my work and passion. It's a
-                                    digital canvas that showcases my projects, skills, and experiences, offering a
-                                    window into my creative journey.
-                                </p>
-                                <p>Website Link : <a target="_blank"
-                                        href="https://azeems-portfolio.onrender.com/">https://azeems-portfolio.onrender.com/</a>
-                                </p>
-                            </div>
+                            <button class="nextDiv" onclick="moveProject(1)">❯</button>
                         </div>
-                        <div class="project2 displayNone">
-                            <div class="projectHeading">
-                                <h1>TRIP TOGETHER</h1>
-                            </div>
-                            <div class="lp lp2">
-                                <div class="p-image-blur" id="project-image2"
-                                    style="background-image: url(../Images/Small/TT-Small.png);">
-                                    <img class="img" src="Images/Original/TT.png" alt="">
-                                </div>
-                                <div class="usedTools">
-                                    <img loading="lazy" src="Images/reactjs.png" alt="">
-                                    <img loading="lazy" src="Images/MongoDB.png" alt="">
-                                    <img loading="lazy" src="Images/NodeJS.png" alt="">
-                                    <img loading="lazy" src="Images/jwtImage.webp" alt="">
-                                </div>
-                                <div class="corouselDots">
-                                    <button class="dot1 active" onclick="makeProjectActive(1)"></button>
-                                    <button class="dot2 " onclick="makeProjectActive(2)"></button>
-                                    <button class="dot3 " onclick="makeProjectActive(3)"></button>
-                                </div>
-                            </div>
-                            <div class="rp">
-                                <p class="rp-1">
-                                    The Trip Together project aims to address transportation challenges in our
-                                    community by establishing a web-based platform that connects individuals seeking
-                                    affordable and convenient rides
-                                </p>
-                                <p>Website Link : <a href="https://triptogether-10dk.onrender.com/"
-                                        target="_blank">https://triptogether-10dk.onrender.com/</a>
-                                </p>
-                            </div>
-
-
-                        </div>
-                        <div class="project3 displayNone">
-                            <div class="projectHeading">
-                                <h1>ECOMMERCE STORE</h1>
-                            </div>
-                            <div class="lp lp3">
-                                <div class="p-image-blur" id="project-image3"
-                                    style="background-image: url(../Images/Small/nextProject-Small.png);">
-                                    <img class="img" src="Images/Original/nextProject.jpg" alt="">
-                                </div>
-                                <div class="usedTools">
-                                    <img loading="lazy" src="Images/reactjs.png" alt="">
-                                    <img loading="lazy" src="Images/MongoDB.png" alt="">
-                                    <img loading="lazy" src="Images/NodeJS.png" alt="">
-                                    <img loading="lazy" src="Images/jwtImage.webp" alt="">
-                                </div>
-                                <div class="corouselDots">
-                                    <button class="dot1 active" onclick="makeProjectActive(1)"></button>
-                                    <button class="dot2 " onclick="makeProjectActive(2)"></button>
-                                    <button class="dot3 " onclick="makeProjectActive(3)"></button>
-                                </div>
-                            </div>
-                            <div class="rp">
-                                <p class="rp-1">Crafted a complete Ecommerce web application using MERN covering
-                                    everything from the database to the user interface, Made the
-                                    website faster by adding Redis caching enabling quick and smooth shopping for
-                                    customers.
-
-                                </p>
-                                <p>Github Link : <a href="https://github.com/Azeem-0/EcommerceAppClient"
-                                        target="_blank">https://github.com/Azeem-0/</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="nextDiv" onclick="moveProject(1)">❯</button>
+                        <%- include('./partials/social') %>
+                    </section>
+                    <%- include('./partials/footer') %>
             </div>
-            <div class="socialSection">
-                <a href="https://www.instagram.com/azeem.shaik.16906/" target="_blank"><img
-                        src="../Images/instagram.png" alt="Instagram"></a>
-                <a href="https://github.com/Azeem-0" target="_blank"><img src="../Images/Github.png" alt="Github"></a>
-                <a href="https://www.linkedin.com/in/azeemshaik025/" target="_blank"><img src="../Images/linkedin.png"
-                        alt="Linkedin"></a>
-                <a href="mailto:azeemshaik025@gmail.com" target="_blank"><img src="../Images/email.png" alt="Email"></a>
-            </div>
-        </section>
-        <div class="footer">
-            <p>© 2023.Designed & Build by Azeem Shaik</p>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
-        integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/7f2a891619.js" crossorigin="anonymous"></script>
-    <script>
-    </script>
-    <script src="JS/static.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+                integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+            <script src="https://kit.fontawesome.com/7f2a891619.js" crossorigin="anonymous"></script>
+            <script>
+            </script>
+            <script src="JS/static.js"></script>
 </body>
 
 </html>
