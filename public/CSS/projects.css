@@ -93,8 +93,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* width: 30em;
-    height: 15em; */
+    border-radius: 10px;
 }
 
 .loaded-image {
