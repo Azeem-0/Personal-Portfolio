@@ -5,7 +5,7 @@ const cors = require("cors");
 const viewerModel = require("./models/viewerModel");
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3003;
 
 
 app.use(cors());
@@ -59,5 +59,5 @@ app.post("/", async (req, res) => {
     res.redirect("/");
 })
 app.listen(port, () => {
-    console.log("Listening!");
+    console.log("Listening to port!");
 })

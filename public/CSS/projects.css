@@ -63,6 +63,13 @@
     padding: 5px;
 }
 
+.project-link {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid #d1aa00;
+    padding-bottom: 2px;
+}
+
 .lp .img {
     width: 30em;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
