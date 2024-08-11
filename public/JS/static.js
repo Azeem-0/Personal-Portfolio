@@ -186,7 +186,7 @@ else if (window.location.pathname.includes("/projects")) {
 
 
     function restartAnimation(addend, next) {
-        for (var i = 1; i < 4; i++) {
+        for (var i = 1; i <= 4; i++) {
             $(".project" + i).addClass("displayNone");
             $(".corouselDots .dot" + i).removeClass("active");
             $(".project" + i).removeClass("slideDown");
@@ -208,11 +208,11 @@ else if (window.location.pathname.includes("/projects")) {
 
     function moveProject(addend) {
         start = start + addend;
-        if (start > 3) {
+        if (start >= 5) {
             start = 1;
         }
         if (start < 1) {
-            start = 3;
+            start = 4;
         }
         restartAnimation(addend, start);
         $(".corouselDots .dot" + start).addClass("active");
@@ -226,9 +226,12 @@ else if (window.location.pathname.includes("/projects")) {
         const projectPhoto1 = document.querySelector("#project-image1");
         const projectPhoto2 = document.querySelector("#project-image2");
         const projectPhoto3 = document.querySelector("#project-image3");
+        const projectPhoto4 = document.querySelector("#project-image4");
+
         gsap.to(projectPhoto1, { x: e.x / 100, y: e.y / 100, delay: 0.1 });
         gsap.to(projectPhoto2, { x: e.x / 100, y: e.y / 100, delay: 0.1 });
         gsap.to(projectPhoto3, { x: e.x / 100, y: e.y / 100, delay: 0.1 });
+        gsap.to(projectPhoto4, { x: e.x / 100, y: e.y / 100, delay: 0.1 });
     }
     window.addEventListener('mousemove', animateProjects);
 

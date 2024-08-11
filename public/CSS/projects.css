@@ -20,7 +20,8 @@
 
 .project1,
 .project2,
-.project3 {
+.project3,
+.project4 {
     display: flex;
     width: 80vw;
     height: 20vh;
@@ -227,7 +228,8 @@
 
     .project1,
     .project2,
-    .project3 {
+    .project3,
+    .project4 {
         flex-direction: column;
         margin-top: 0%;
         height: fit-content;

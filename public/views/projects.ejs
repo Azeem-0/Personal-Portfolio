@@ -42,6 +42,7 @@
                                                 <button class="dot1 active" onclick="makeProjectActive(1)"></button>
                                                 <button class="dot2 " onclick="makeProjectActive(2)"></button>
                                                 <button class="dot3 " onclick="makeProjectActive(3)"></button>
+                                                <button class="dot4 " onclick="makeProjectActive(4)"></button>
                                             </div>
                                         </div>
                                         <div class="rp">
@@ -78,6 +79,7 @@
                                                 <button class="dot1 active" onclick="makeProjectActive(1)"></button>
                                                 <button class="dot2 " onclick="makeProjectActive(2)"></button>
                                                 <button class="dot3 " onclick="makeProjectActive(3)"></button>
+                                                <button class="dot4 " onclick="makeProjectActive(4)"></button>
                                             </div>
                                         </div>
                                         <div class="rp">
@@ -98,57 +100,91 @@
                                     </div>
                                     <div class="project3 displayNone">
                                         <div class="projectHeading">
-                                            <h1>ECOMMERCE STORE</h1>
+                                            <h1>EASY-SHOPIFY</h1>
                                         </div>
                                         <div class="lp lp3">
                                             <div class="p-image-blur" id="project-image3"
-                                                style="background-image: url(../Images/Small/nextProject-Small.png);">
-                                                <img class="img" src="Images/Original/nextProject.jpg" alt="">
+                                                style="background-image: url(../Images/Small/ES-Small.png);">
+                                                <img class="img" src="Images/Original/Es.png" alt="">
                                             </div>
                                             <div class="usedTools">
                                                 <img loading="lazy" src="Images/reactjs.png" alt="">
                                                 <img loading="lazy" src="Images/MongoDB.png" alt="">
                                                 <img loading="lazy" src="Images/NodeJS.png" alt="">
-                                                <img loading="lazy" src="Images/jwtImage.webp" alt="">
+                                                <img loading="lazy" src="Images/Redis.webp" alt="">
                                             </div>
                                             <div class="corouselDots">
                                                 <button class="dot1 active" onclick="makeProjectActive(1)"></button>
                                                 <button class="dot2 " onclick="makeProjectActive(2)"></button>
                                                 <button class="dot3 " onclick="makeProjectActive(3)"></button>
+                                                <button class="dot4 " onclick="makeProjectActive(4)"></button>
                                             </div>
                                         </div>
                                         <div class="rp">
-                                            <p class="rp-1">Crafted a complete Ecommerce web application using MERN
-                                                covering
-                                                everything from the database to the user interface, Made the
-                                                website faster by adding Redis caching enabling quick and smooth
-                                                shopping
-                                                for
-                                                customers.
-
+                                            <p class="rp-1">Built a complete E-commerce website with the MERN stack,
+                                                handling everything from the database to the user interface.
+                                                Improved speed by adding Redis caching, making the shopping experience
+                                                faster and smoother for customers.
                                             </p>
                                             <p>Github Link : <a class="project-link"
                                                     href="https://github.com/Azeem-0/EcommerceAppClient"
-                                                    target="_blank">Visit GitHub Profile.</a>
+                                                    target="_blank">Visit GitHub Repository.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project4 displayNone">
+                                        <div class="projectHeading">
+                                            <h1>Code and Climb</h1>
+                                        </div>
+                                        <div class="lp lp4">
+                                            <div class="p-image-blur" id="project-image4"
+                                                style="background-image: url(../Images/Small/CC-Small.png);">
+                                                <img class="img" src="Images/Original/CC.png" alt="">
+                                            </div>
+                                            <div class="usedTools">
+                                                <img loading="lazy" src="Images/reactjs.png" alt="">
+                                                <img loading="lazy" src="Images/MongoDB.png" alt="">
+                                                <img loading="lazy" src="Images/NodeJS.png" alt="">
+                                                <img loading="lazy" src="Images/SocketIo.webp" alt="">
+                                            </div>
+                                            <div class="corouselDots">
+                                                <button class="dot1 active" onclick="makeProjectActive(1)"></button>
+                                                <button class="dot2 " onclick="makeProjectActive(2)"></button>
+                                                <button class="dot3 " onclick="makeProjectActive(3)"></button>
+                                                <button class="dot4 " onclick="makeProjectActive(4)"></button>
+                                            </div>
+                                        </div>
+                                        <div class="rp">
+                                            <p class="rp-1">Built a multiplayer gaming platform allowing players to join
+                                                sessions and compete in an engaging game-play
+                                                experience, crafted three tiers of algorithmic puzzles (easy, medium,
+                                                and
+                                                hard) synchronized with ladder and snake events.
+                                            </p>
+                                            <p>Github Link : <a class="project-link"
+                                                    href="https://github.com/svssathvik7/CodeClimb-Client.git"
+                                                    target="_blank">Visit GitHub Repository.</a>
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <button class="nextDiv" onclick="moveProject(1)">❯</button>
                         </div>
-                        <%- include('./partials/social') %>
-                    </section>
-                    <%- include('./partials/footer') %>
+                        <button class="nextDiv" onclick="moveProject(1)">❯</button>
             </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
-                integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
-                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-            <script src="https://kit.fontawesome.com/7f2a891619.js" crossorigin="anonymous"></script>
-            <script>
-            </script>
-            <script src="JS/static.js"></script>
+            <%- include('./partials/social') %>
+                </section>
+                <%- include('./partials/footer') %>
+                    </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+                        integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+                        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+                    <script src="https://kit.fontawesome.com/7f2a891619.js" crossorigin="anonymous"></script>
+                    <script>
+                    </script>
+                    <script src="JS/static.js"></script>
 </body>
 
 </html>
