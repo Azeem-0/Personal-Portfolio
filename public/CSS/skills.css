@@ -137,7 +137,7 @@
 
 .cpp,
 .c {
-    width: 100%;
+    width: 75%;
 }
 
 .python {
@@ -145,19 +145,19 @@
 }
 
 .html {
-    width: 75%;
+    width: 90%;
 }
 
 .css {
-    width: 70%;
+    width: 90%;
 }
 
 .js {
-    width: 65%;
+    width: 85%;
 }
 
 .java {
-    width: 65%;
+    width: 85%;
 }
 
 .bootstrap {
@@ -177,16 +177,22 @@
 }
 
 .jquery {
-    width: 70%;
+    width: 75%;
+}
+
+.redis {
+    width: 55%;
+}
+
+.git {
+    width: 75%;
 }
 
 .icons {
     margin-left: 11%;
 }
 
-.cricket {
-    width: 80%;
-}
+
 
 /* JAVASCRIPT USING CLASSES */
 .skillButtonSlide {
